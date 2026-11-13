@@ -1,0 +1,22 @@
+[PASS] A1 healthz 200 + cache_stats :: A1:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A2 readyz 四项探测 :: A2:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[SKIP] A3 故障降级点名 :: 停容器需 Docker daemon；readyz 降级点名已由测试覆盖
+[PASS] A4 预热不阻塞 :: lifespan 后台预热:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A5 ask 契约五字段 :: A5:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A6 拒答 citations==[] :: A6:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A7/A8 回链 + 404 :: A7/A8:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A9 feedback(文件降级) :: feedback 201(文件降级): 201 True
+[PASS] A10 错误码稳定 :: A10:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A11 审计四段耗时 :: A11:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A13 20 并发 P95<=6s :: P95=1904ms; rc=0; partial_rate=0.000  error_rate=0.000
+[PASS] A15 缓存命中+引用完整 :: A15:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A16 命中率实测 :: A16:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A18 OpenAPI 5 路径 :: A18:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[SKIP] A19 Compose 交付 :: 无 Docker daemon：compose/Dockerfile/init.sql/.env.example 交付且 YAML 校验通过
+[PASS] A20 无 Docker 手工路径 :: 无 Docker 路径全绿:   warnings.warn(PytestDeprecationWarning(_DEFAULT_FIXTURE_LOOP_SCOPE_UNSET))
+[PASS] A21 服务化无质量回归 :: 全量回归: {"ts": "2026-10-24T21:29:55", "level": "INFO", "logger": "milvus_lite.server_manager", "event": "MilvusLite server stopped for F:\\MedEviRAG\\pytest-of-11\\pytest-41\\lite_index0\\lite.db (port 49628)", "trace_id": "-"}
+[PASS] A22 运维手册 :: 运维手册四节齐全
+
+======================================================================
+A1-A22: PASS=16  FAIL=0  SKIP=2
+报告: F:\MedEviRAG\data\reports\s6_acceptance.json

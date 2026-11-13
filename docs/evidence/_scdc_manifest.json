@@ -1,0 +1,731 @@
+[
+ {
+  "file": "0810_145521_583.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202108/0810_145521_583.pdf",
+  "bytes": 3337378,
+  "sha256": "819966e27c3752f37b288ddb3dfbb55493aa3f02a2e655d941d0828eed4780cd",
+  "topic": "儿童青少年健康",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0810_145523_555.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202108/0810_145523_555.pdf",
+  "bytes": 1042937,
+  "sha256": "8bf022bc9cae6cdfe76a1c5bc4a87b6e1054a3d6ba204954cf0c55e67f76f38b",
+  "topic": "儿童青少年健康",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0810_145524_168.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202108/0810_145524_168.pdf",
+  "bytes": 1558256,
+  "sha256": "1bbaf659fc49a5e337d7bea091a7f32bab64f2ce1077e7ddf9084d17a5055df0",
+  "topic": "儿童青少年健康",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0810_145526_434.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202108/0810_145526_434.pdf",
+  "bytes": 2815825,
+  "sha256": "ab25ebeb6728131977d75713a2fe3b2be287d32494fea456e95280e91fbaa779",
+  "topic": "儿童青少年健康",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0810_145542_506.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202108/0810_145542_506.pdf",
+  "bytes": 6778687,
+  "sha256": "6db4168786f858d2a5795701481f19d1931535ff7c3dc8c763f7a357882565ca",
+  "topic": "儿童青少年健康",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0321_155312_632.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202403/0321_155312_632.pdf",
+  "bytes": 1716588,
+  "sha256": "e991618f37022ff19a045e6c5633c05d1e6e0a13a293028805015fbb983f5ff5",
+  "topic": "艾滋病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_124354_870.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_124354_870.pdf",
+  "bytes": 1058247,
+  "sha256": "d73999ecccc41632b10cd05392f5a17ac5a239e825e1d4a7b27d1cd08c2414ea",
+  "topic": "艾滋病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_124320_105.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_124320_105.pdf",
+  "bytes": 531463,
+  "sha256": "f788732cb5f05af60435582510ffa9b4e1f459f423f20ed937a53ed4e76a3efe",
+  "topic": "艾滋病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153210_594.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153210_594.pdf",
+  "bytes": 439767,
+  "sha256": "97e427c6fe767b6597fe810a574aeea086b9c7cc6bb5b30647014d6e65ab5733",
+  "topic": "布鲁氏菌病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153210_848.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153210_848.pdf",
+  "bytes": 359152,
+  "sha256": "542127cc464e4f986b76829d27c2c7e2d76523b4c4b7924675317dd5b76af69c",
+  "topic": "布鲁氏菌病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0707_144543_167.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202107/0707_144543_167.pdf",
+  "bytes": 307175,
+  "sha256": "7263b5bf56d063a01c753117221df710a084b5a3a5ce0538d5f9a89f6cbac581",
+  "topic": "病毒性肝炎",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0608_154118_866.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202106/0608_154118_866.pdf",
+  "bytes": 13267646,
+  "sha256": "729dafec2504ae6f135c9075c5d89e38148f661027beb672a1464ad92f1b0e3e",
+  "topic": "病毒性肝炎",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0514_082140_994.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0514_082140_994.pdf",
+  "bytes": 6081112,
+  "sha256": "7d9ee5f1444faf97e43d59a246003297426a219d49a9f5fc186c8d4709f2f525",
+  "topic": "病毒性肝炎",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153307_354.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153307_354.pdf",
+  "bytes": 442006,
+  "sha256": "34eab9774c96eb9ccc65be95a0806fbd3a5fcc6f88135df3ec30a1010d692d8d",
+  "topic": "登革热",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153307_532.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153307_532.pdf",
+  "bytes": 549364,
+  "sha256": "df0a2322f7a8ad17d801fa9fbcc3f637a5b77b05816eaba5ee7e56533c4bdd55",
+  "topic": "登革热",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153309_515.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153309_515.pdf",
+  "bytes": 693135,
+  "sha256": "9132cea427fdbfbb5f1f4f38ddf8dc7af4ba0588ad0179973daf1dd9f638aa01",
+  "topic": "登革热",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153309_241.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153309_241.pdf",
+  "bytes": 718782,
+  "sha256": "b5a1a02118acf576a492086642d814aa2e258f97f773d887e331c5a2220acfc6",
+  "topic": "登革热",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0811_150232_451.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202108/0811_150232_451.pdf",
+  "bytes": 217029,
+  "sha256": "728d9f3ea718041915d627e1cb2e9cb19fede1c9e1cbfffe8e655c9262541905",
+  "topic": "儿童青少年肥胖",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_101832_436.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_101832_436.pdf",
+  "bytes": 1301098,
+  "sha256": "22fab1133592a1f485bbfb213d6ad419b3f085dd03a17c2e9bbab8f227a172f8",
+  "topic": "高血压",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_101758_140.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_101758_140.pdf",
+  "bytes": 5241797,
+  "sha256": "bc51286d77fa6eccd11aa6147fd0ef436c7056150a9548ab7059fdc5093a1252",
+  "topic": "高血压",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_101719_234.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_101719_234.pdf",
+  "bytes": 1901025,
+  "sha256": "e6c5227d95d289a810c953d895afc740ae922fc80ed4a8f1d5f4e39a9cd6c000",
+  "topic": "高血压",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_101620_633.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_101620_633.pdf",
+  "bytes": 2009839,
+  "sha256": "6d2042392328399b51d6f61ebcc763a7955f71cb44ca502299f5be249fd01e43",
+  "topic": "高血压",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1105_101130_475.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202011/1105_101130_475.pdf",
+  "bytes": 7072655,
+  "sha256": "b592a0121b2f5965450ef11b86168c88ee5522b1ac58312d35c7e702749bc1d4",
+  "topic": "脊髓灰质炎",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_130803_579.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_130803_579.pdf",
+  "bytes": 20779322,
+  "sha256": "6ea3e620af8f7ce62feee00aea4ff8d08cee910fcff76903343d5ea1635f2313",
+  "topic": "结核病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_130712_761.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_130712_761.pdf",
+  "bytes": 952099,
+  "sha256": "b2903adab30ae8526d3366b39125739670420c9764e1238df42baa688391557d",
+  "topic": "结核病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_130656_338.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_130656_338.pdf",
+  "bytes": 7301359,
+  "sha256": "a4c694229b67c093c4a2aebab7786704f20f46e10e69227995358b1e19a3b398",
+  "topic": "结核病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_154140_360.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_154140_360.pdf",
+  "bytes": 375996,
+  "sha256": "82a00209690bc0fba46fc23c9fed792a9251530b329e93c065545f65c4461df5",
+  "topic": "菌痢",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0108_135352_975.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0108_135352_975.pdf",
+  "bytes": 182352,
+  "sha256": "81b00f6c12c0897cf0c309e89a37996b4974809d8a36b102417efc2944f2bf4a",
+  "topic": "儿童青少年近视",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0130_150758_187.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0130_150758_187.pdf",
+  "bytes": 320527,
+  "sha256": "494a0408b18bec63071b807b0061596c9871902322fd4afb0646645991e6a1eb",
+  "topic": "儿童青少年近视",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0111_135937_509.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0111_135937_509.pdf",
+  "bytes": 5554862,
+  "sha256": "be094c2511246ebc713898acb826e766652481f75a1619b8767e6a6580cdf7d5",
+  "topic": "脊柱弯曲异常",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0426_172408_612.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202104/0426_172408_612.pdf",
+  "bytes": 643968,
+  "sha256": "1b5dbedda794ca7c99a5bd1f44f916224b204fdffe495aa578de284c8f61fbba",
+  "topic": "空气污染与健康",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1105_111337_867.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202011/1105_111337_867.pdf",
+  "bytes": 435799,
+  "sha256": "5375906dd8974e92a330115febc03431048ad362901726ad57c55f866b08e2fe",
+  "topic": "狂犬病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0621_144159_689.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202106/0621_144159_689.pdf",
+  "bytes": 412490,
+  "sha256": "3e8b9b8973a37f11934a91b58fa5e2d19e50c5ff33f6279f59bcb4ba77877d36",
+  "topic": "流行性乙型脑炎",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153518_880.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153518_880.pdf",
+  "bytes": 427851,
+  "sha256": "b338ea5ec75beec4da2631dce8ac3332c19a8926cf4db9ec86fc4fa9c8292058",
+  "topic": "流脑",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153518_629.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153518_629.pdf",
+  "bytes": 462385,
+  "sha256": "8e746638814e0d1ac1a72ad11f004595a57fcacea3a768ef8c6a1e1b014a2129",
+  "topic": "流脑",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_125349_591.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_125349_591.pdf",
+  "bytes": 882866,
+  "sha256": "929c5c89144a4ed374eec53aa0d7b4f57b65f29060840d255556e8c48584c01b",
+  "topic": "麻风病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_125442_779.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_125442_779.pdf",
+  "bytes": 9593292,
+  "sha256": "1b941657bfd5416a970eade0b5bdbac72d92ca89471bfb9789632cff6ba966bf",
+  "topic": "麻风病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0727_162750_927.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202607/0727_162750_927.pdf",
+  "bytes": 655744,
+  "sha256": "55cceacb6b6b761f512f496630bff520509c167662183e04a153d5fa6e808e0e",
+  "topic": "慢性呼吸系统疾病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0727_162703_953.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202607/0727_162703_953.pdf",
+  "bytes": 2301117,
+  "sha256": "db95cf5af78f39d31aa886c6f55a460edafc110daa825a40fbef5c8760ac1ad8",
+  "topic": "慢性呼吸系统疾病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0727_162602_559.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202607/0727_162602_559.pdf",
+  "bytes": 3571253,
+  "sha256": "e1d7ce788faaeadd310d5590ff4dd3e8d9465cc837831114ca79079a6cb468b3",
+  "topic": "慢性呼吸系统疾病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0727_162437_802.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202607/0727_162437_802.pdf",
+  "bytes": 3693884,
+  "sha256": "04a2d9ec4f6a82bd74572f3e248094d3f725c35b3561a9b31e5820c815672b06",
+  "topic": "慢性呼吸系统疾病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153557_418.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153557_418.pdf",
+  "bytes": 434554,
+  "sha256": "afb49e9cc0bee6fb991080b55ef254b567601027474ec20da4dcb91a34a7eb18",
+  "topic": "疟疾",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0531_112854_318.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0531_112854_318.pdf",
+  "bytes": 504837,
+  "sha256": "5b7e54fc3d5eb21856f864f81cb42e97c7ed94317f627dcfac71e5a3cb80d60a",
+  "topic": "疟疾",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0531_112855_719.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0531_112855_719.pdf",
+  "bytes": 962363,
+  "sha256": "e99597f5f6c626b989d4814ae0db1961cdb4138de4667efea1a56aaad6146381",
+  "topic": "疟疾",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0531_112855_497.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0531_112855_497.pdf",
+  "bytes": 1908853,
+  "sha256": "f6439e5329ef6bc336b374a6586ff95efbded2ca7f277c2a89740e8fba6f1dc8",
+  "topic": "疟疾",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0609_154146_720.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202106/0609_154146_720.pdf",
+  "bytes": 2218526,
+  "sha256": "f4af539d19446db9b407ddc75a5e660356e7ceab11b1fb2365dd9c5b1e5c7e6e",
+  "topic": "诺如病毒性腹泻",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1105_104513_650.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202011/1105_104513_650.pdf",
+  "bytes": 386453,
+  "sha256": "bbe08dc22ccf059646d6c768e9ea1569f26e4880fcd2a09a4d2e71a4efbec833",
+  "topic": "破伤风",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0108_172143_237.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0108_172143_237.pdf",
+  "bytes": 2449109,
+  "sha256": "90d5918ced0016670e41fc42e2fadd182c13a6c612c00b0bd387405de2035b16",
+  "topic": "缺铁性贫血",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153813_521.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153813_521.pdf",
+  "bytes": 292694,
+  "sha256": "dc85df8810c2c571ab0a14496c6197ae959a18d61ac326e479c0ca5d16a4cfbf",
+  "topic": "人禽流感",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153814_317.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153814_317.pdf",
+  "bytes": 419344,
+  "sha256": "ca77731c25b7bbfe65d1c633bb08a4ad231b43fc50c257ea03854cf36795b9cc",
+  "topic": "人禽流感",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0621_144346_626.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202106/0621_144346_626.pdf",
+  "bytes": 234440,
+  "sha256": "5be474af0a423030ef52ee38f2e2d882f20e3e1d234658af45ee1d0cf1af034b",
+  "topic": "食源性寄生虫病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0527_153905_456.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0527_153905_456.pdf",
+  "bytes": 412620,
+  "sha256": "730af1412911760769a9533789c4b429680acd24137e6207ce30dd594da7072f",
+  "topic": "伤寒",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0727_161744_241.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202607/0727_161744_241.pdf",
+  "bytes": 2243896,
+  "sha256": "7fc61ba89a71de2e975a0b0585e438cb147b139e1c4254aa2505f7ee0e6c65ed",
+  "topic": "伤害",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0727_161912_707.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202607/0727_161912_707.pdf",
+  "bytes": 577472,
+  "sha256": "7605cf1196a1f158aa2be668002402959804c5f3337af2225ce9b0ad9897260d",
+  "topic": "伤害",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0727_161912_386.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202607/0727_161912_386.pdf",
+  "bytes": 1413145,
+  "sha256": "057a09467cc3c28113f770938999ba035d24095e466a331dc39e05c9cd716bc6",
+  "topic": "伤害",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0513_141934_278.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0513_141934_278.pdf",
+  "bytes": 6669457,
+  "sha256": "86ad3f5ba7084041109d09ccce9ba09f50964684a96dcc49abaef44ddd37e4b9",
+  "topic": "伤害",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0513_141436_391.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0513_141436_391.pdf",
+  "bytes": 4601690,
+  "sha256": "07ba615c6ea1ff2905fa9a6ba93d8195b0ffade647ef3bc5bbb880222eeff5c8",
+  "topic": "伤害",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0831_100937_843.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202608/0831_100937_843.pdf",
+  "bytes": 359357,
+  "sha256": "57079ed834e05cba58db4bf647edd743c52e69661e57fb8566efcd81191201e6",
+  "topic": "食品污染与健康",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0426_170427_328.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202104/0426_170427_328.pdf",
+  "bytes": 1091628,
+  "sha256": "b5617684405b5187738341be8e5a87e7a005b009683878e3f20c0586547dd7d6",
+  "topic": "水与健康",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0108_140253_345.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0108_140253_345.pdf",
+  "bytes": 500891,
+  "sha256": "7bcb1fde9fce81381f14c98c130f3d58df116baba85574bf3676df8e4f490286",
+  "topic": "儿童青少年伤害",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_100011_575.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_100011_575.pdf",
+  "bytes": 15315291,
+  "sha256": "791418bb71ebd96d1ffdaecd26a89556601c21e89834cb9bb33481655e2597b2",
+  "topic": "糖尿病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_095848_337.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_095848_337.pdf",
+  "bytes": 2396214,
+  "sha256": "964efec1805c55f8e41bda27458949457f3e1676a9e26ac16cbbb06cba393c8b",
+  "topic": "糖尿病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_095420_602.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_095420_602.pdf",
+  "bytes": 6360284,
+  "sha256": "d52cd0c5b9679948cbf914685afea5cb862a471240dfa49b04a4bbec5373fedd",
+  "topic": "糖尿病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_095205_290.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_095205_290.pdf",
+  "bytes": 2080383,
+  "sha256": "2e03cd9e06b1a1faf67298647a01c5e5d2be9cd99aacb527732c51f1ee378d87",
+  "topic": "糖尿病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0531_112531_215.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0531_112531_215.pdf",
+  "bytes": 394242,
+  "sha256": "a56e04abc1b9eed5714fcbb23bc4dc027a7ba6a1ca375fbc6b5484509f4a3f96",
+  "topic": "血吸虫病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0621_143946_131.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202106/0621_143946_131.pdf",
+  "bytes": 549884,
+  "sha256": "ec80f8e78fd7025a09e625d3562f36c531e1b829faacef392932bab415bd9885",
+  "topic": "血吸虫病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0621_144019_327.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202106/0621_144019_327.pdf",
+  "bytes": 606363,
+  "sha256": "ce6ae7db12826f2fcd005fd6d724d9905908049a806749c11d4ea31dabb18ec5",
+  "topic": "血吸虫病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_130218_622.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_130218_622.pdf",
+  "bytes": 489215,
+  "sha256": "338b38ae06041d3142101683a4edda526aee07bf33c567f88aa8352691e632e8",
+  "topic": "性病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_130159_381.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_130159_381.pdf",
+  "bytes": 755317,
+  "sha256": "ed3cfd66f9bd2ffc7825e3ddab5036135be35101d8ad429eb8a629ed97fc6d55",
+  "topic": "性病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_130133_511.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_130133_511.pdf",
+  "bytes": 489941,
+  "sha256": "8f434089e4b2ec1b08e44c24783521c3101aef8e536e1a0700099cff7fda9e8a",
+  "topic": "性病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0123_130053_149.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0123_130053_149.pdf",
+  "bytes": 719516,
+  "sha256": "1d115b3216183c02a5ada94c311dbf4fff9dd75bf0e1270eccea506b4343d24e",
+  "topic": "性病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_101218_765.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_101218_765.pdf",
+  "bytes": 5580591,
+  "sha256": "9f2860a57817a64c2e377c7b536d266a36862714eacc53f888034f41db5dc359",
+  "topic": "心脑血管疾病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_101126_324.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_101126_324.pdf",
+  "bytes": 1527887,
+  "sha256": "595f0f3358c7b96580a548ee93923010b2a2ff672f500e3bf0859344811893d0",
+  "topic": "心脑血管疾病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0201_084005_469.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202402/0201_084005_469.pdf",
+  "bytes": 5086172,
+  "sha256": "f90d5cf043c4850b6a0ad86b973fbc10ed43c665e6c09a988b2bde3c231f7bec",
+  "topic": "心脑血管疾病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0201_083620_622.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202402/0201_083620_622.pdf",
+  "bytes": 1595379,
+  "sha256": "b71473554643d84342fe73b4c54d0ca6025e20cf3f9ab858455806ad171ec17b",
+  "topic": "心脑血管疾病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_101439_126.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_101439_126.pdf",
+  "bytes": 16035816,
+  "sha256": "ce7e43937883f2d89bb3b505a410d023df510027e2015457d2800e98f5a330a2",
+  "topic": "行为生活方式",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "1031_100920_451.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202510/1031_100920_451.pdf",
+  "bytes": 828638,
+  "sha256": "7a801bfd1cb5a40653a99f731aeaf7c061be63d7d983ff35415d450eeef3d02c",
+  "topic": "行为生活方式",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0201_084223_810.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202402/0201_084223_810.pdf",
+  "bytes": 686701,
+  "sha256": "7f402b5e42279d829445a7cdeb8d36b898a3dfa8b90a8c6e34a5903985d7b269",
+  "topic": "行为生活方式",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0513_143539_515.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202105/0513_143539_515.pdf",
+  "bytes": 4041257,
+  "sha256": "50b66c44e7083cc3752849f301ae1d60d9360d511e34c0c948b39bdf6e13dc88",
+  "topic": "行为生活方式",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0108_140741_181.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202101/0108_140741_181.pdf",
+  "bytes": 365136,
+  "sha256": "bf896700faa560b526d93982aa18cc63994a2e4ca6019f1108c135ad62f38ac3",
+  "topic": "儿童血压偏高",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ },
+ {
+  "file": "0621_144626_242.pdf",
+  "url": "https://www.scdc.sh.cn/shjk/shjk/upload/202106/0621_144626_242.pdf",
+  "bytes": 451037,
+  "sha256": "f96250b14d4d25658d410759f665def0eadc38d4d79e40fb52548770403ada8c",
+  "topic": "锥虫病",
+  "license": "public-web (CDC health education material)",
+  "redistribution": "prohibited"
+ }
+]

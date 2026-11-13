@@ -1,0 +1,22 @@
+filter relaxed: evidence_level (候选不足 min_keep=8)
+filter relaxed: doc_type (候选不足 min_keep=8)
+filter relaxed: publish_year (候选不足 min_keep=8)
+==========================================================================================
+S2 验收复核（A1~A14）
+==========================================================================================
+[PASS] A1 chunks_emb.npy (N,1024) 且 max||v|-1| <= 1e-5 —— shape=(4023, 1024) dim=1024 前缀 2000 行 max|norm-1|=1.192e-07
+[PASS] A2 meta.N == bm25/meta.N == chunk_ids 行数 —— meta.N=4023 bm25.N=4023 chunk_ids=4023
+[PASS] A3 Milvus Lite 无 Docker 可检索，单次 search < 20ms —— exit=0; 7 passed in 5.71s; A3 search latency: n=30 p50=1.65ms p95=1.73ms max=1.74ms
+[PASS] A4 两路 Top10 非空；exact_term: Recall(bm25) >= Recall(dense)-0.02 —— dense=0.9375 bm25=0.9375 阈值=0.9175; empty-top10 counts: {'dense-only': 0, 'bm25-only': 0}
+[PASS] A5 RRF dev48 Recall@10 >= 0.85 —— rrf recall@10=0.9271
+[PASS] A6 RRF dev48 MRR >= 0.62 —— rrf mrr=0.8351
+[PASS] A7 RRF dev48 nDCG@10 >= 0.70 —— rrf ndcg@10=0.7552
+[PASS] A8 四条过滤规则 + unknown 100% 存活 + 候选<8 时 relaxed 非空 —— pytest exit=0 19 passed in 0.09s; unknown 50/50 存活=True; exclude=BCD 时 unknown 仍在=True; 稀薄候选 relaxed=['doc_type', 'evidence_level', 'publish_year']
+[PASS] A9 ef 16/64/128 的 ef16 vs ef128 Top10 重合 < 1.0 —— overlap.ef16_vs_ef128=0.99 verdict=EF_TRANSPARENT
+[SKIP] A10 Lite vs 服务器版 parity —— SKIP（docs/03 §6 允许）：no Milvus server reachable: MILVUS_SERVER_URI is unset, no pre-existing server on 127.0.0.1:19530, and the docker daemon is down. docker info stderr: failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./
+[PASS] A11 s2_gate PASS + 四行×三列 12 格非空 + 脚本生成 —— gate exit=0; 非空格=12/12; generated_at&config_hash=True; 三分组小表=True; GATE: PASS
+[PASS] A12 同一 query 两次 retrieve 逐位相同 —— DETERMINISTIC = True  (variants=['rrf', 'weighted-sum', 'dense-only', 'bm25-only'] queries=10)
+[PASS] A13 pytest -m 'not gpu and not docker' 0 failed, exit 0 —— exit=0; 317 passed, 1 warning in 21.51s
+[PASS] A14 Lite 路径 retrieve P50 <= 1500ms（服务器版目标 <= 80ms） —— rrf n=48 P50=8.28ms P95=9.47ms max=10.54ms
+------------------------------------------------------------------------------------------
+结论：全部通过 (exit 0)

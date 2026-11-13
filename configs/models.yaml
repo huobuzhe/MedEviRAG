@@ -1,0 +1,52 @@
+# 三层模型与【按 provider 独立代理】(docs/00 §13 唯一口径)
+#
+# 为什么按 provider 配 proxy：
+#   - SiliconFlow 走 Clash 127.0.0.1:7890 实测返回 HTTP 000（必须直连）
+#   - api.deepseek.com 直连 000，必须走代理
+#   一个全局 HTTPS_PROXY 无法同时满足两者，所以代理必须降到 provider 粒度。
+#   代码侧必须 httpx.Client(proxy=cfg.proxy, trust_env=False)，否则环境里的
+#   HTTPS_PROXY 会覆盖 proxy=None。
+llm:
+  default: siliconflow
+  proxy: null                  # 全局兜底：直连
+  providers:
+    siliconflow:               # 生成主用
+      base_url: https://api.siliconflow.cn/v1
+      model: deepseek-ai/DeepSeek-V4.1-Flash
+      temperature: 0.0
+      proxy: null              # ★ 实测走代理 -> HTTP 000
+      api_key_env: SILICONFLOW_API_KEY
+      timeout_s: 60.0
+    dashscope:                 # 评测 judge 专用，必须与生成模型不同族
+      base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+      model: qwen3.8-flash
+      temperature: 0.0
+      proxy: null
+      api_key_env: DASHSCOPE_API_KEY
+      timeout_s: 60.0
+    deepseek-official:         # 已弃用（Key 实测 401 code=30014），仅保留结构示例
+      base_url: https://api.deepseek.com/v1
+      model: deepseek-chat
+      temperature: 0.0
+      proxy: http://127.0.0.1:7890   # ★ 该域名直连 000，必须走代理
+      api_key_env: DEEPSEEK_API_KEY
+      timeout_s: 60.0
+
+embedding:
+  model_path: models/bge-m3
+  device: cuda
+  batch_size: 16
+  dim: 1024
+  max_length: 512
+  proxy: null                  # 本地模型，无网络请求
+
+reranker:
+  model_path: models/bge-reranker-v2-m3
+  device: cuda
+  batch_size: 16
+  max_length: 512
+  proxy: null
+
+budget:
+  max_total_tokens: 2000000    # 全项目预算上限
+  per_run_warn: 200000         # 单次运行告警线

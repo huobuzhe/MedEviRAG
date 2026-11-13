@@ -1,0 +1,40 @@
+
+=== A1 解释器 + GPU + numpy 兼容 ===
+PASS A1 :: 3.10.15 2.3.1+cu118 True 1.26.4 | cuda tensor ok (4, 4)
+
+=== A2 依赖可导入（pip 已装；此处核 requirements.txt 全部包可 import） ===
+PASS A2 :: missing []
+
+=== A3 pytest ===
+PASS A3 :: 317 passed, 1 warning in 21.47s
+
+=== A4 ruff + mypy ===
+PASS A4-ruff :: All checks passed!
+PASS A4-mypy :: Success: no issues found in 58 source files
+
+=== A5 检索参数 10/50/50/60 ===
+PASS A5 :: 10 50 50 60
+
+=== A6 过滤器 10 年 / C 级 ===
+PASS A6 :: 10 C
+
+=== A7 provider 的 proxy 取值（None 表示显式直连） ===
+PASS A7 :: None 'http://127.0.0.1:7890'
+
+=== A8 结构化日志每行可 json.loads 且含 trace_id / latency_ms ===
+PASS A8 :: ok | {"ts": "2026-10-25T00:24:29", "level": "INFO", "logger": "acc", "event": "boot", "trace_id": "t-001", "node": "doctor", "latency_ms": 2.5}
+
+=== A9 FakeLLM 确定性 + 四剧本可辨识 ===
+PASS A9 :: same True distinct 4 C9 True
+
+=== A10 真实 API 调用数 = 0 ===
+PASS A10 :: calls 0
+
+=== A11 三个反例各抛 ValueError + RefusalReason 15 值 ===
+PASS A11 :: raised 3 reasons 15
+
+=== A12 docker compose 语法门禁（无 daemon 也应退出码 0 并列出 6 服务） ===
+PASS A12 :: exit=0 services=api/etcd/milvus/minio/postgres/redis
+
+=== 结果汇总 ===
+FAILED: 无，A1-A12 全通过

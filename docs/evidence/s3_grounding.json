@@ -1,0 +1,15 @@
+{
+  "n_cases": 24,
+  "llm_mode": "fake_grounded",
+  "gate_applicable": false,
+  "llm_real_skipped": true,
+  "landing_acc_marker_level": 1.0,
+  "landing_acc_case_level": 1.0,
+  "support_rate_mean": 1.0,
+  "support_n_cases": 24,
+  "illegal_samples": [],
+  "llm_calls": 24,
+  "tokens_used": 0,
+  "latency_p50_ms": 54.6,
+  "latency_p95_ms": 83.2
+}

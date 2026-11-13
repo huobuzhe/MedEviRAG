@@ -1,0 +1,482 @@
+[
+  {
+    "target": "ai_chef_agent",
+    "version": "v3.0-stage10",
+    "run_id": "ai_chef_agent_20261112T112524_baseline",
+    "case_count": 12,
+    "success_rate": 1.0,
+    "error_rate": 0.3333,
+    "total_tokens": 1940,
+    "estimated_cost_yuan": 0.00194,
+    "avg_latency_ms": 0.0452,
+    "p95_latency_ms": 0.1746,
+    "records": [
+      {
+        "case_id": "chef_00",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第1问：安排低钠食谱",
+        "output": "已根据 retrieve_evidence 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 1.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "retrieve_evidence"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.1746000000366621,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "chef_01",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第2问：安排低钠食谱",
+        "output": "已根据 calculate_nutrition、search_local_recipes、verify_citation 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 3.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "search_local_recipes",
+          "calculate_nutrition",
+          "verify_citation"
+        ],
+        "cost_tokens": 240,
+        "latency_ms": 0.06280000002334418,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "chef_02",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第3问：安排低钠食谱",
+        "output": "已根据 calculate_nutrition 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 2.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "calculate_nutrition",
+          "calculate_nutrition"
+        ],
+        "cost_tokens": 140,
+        "latency_ms": 0.05910000004405447,
+        "status": "ok",
+        "error": "PARAM_INVALID: Input should be a valid list"
+      },
+      {
+        "case_id": "chef_03",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第4问：安排低钠食谱",
+        "output": "已根据 drug_food_interaction 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 2.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "drug_food_interaction",
+          "drug_food_interaction"
+        ],
+        "cost_tokens": 220,
+        "latency_ms": 0.03670000000965956,
+        "status": "ok",
+        "error": "PARAM_INVALID: Field required"
+      },
+      {
+        "case_id": "chef_04",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第5问：安排低钠食谱",
+        "output": "已根据 retrieve_evidence 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 4.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "retrieve_evidence"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0315999998292682,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "chef_05",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第6问：安排低钠食谱",
+        "output": "已根据 drug_food_interaction 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 1.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "drug_food_interaction"
+        ],
+        "cost_tokens": 110,
+        "latency_ms": 0.01889999998638814,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "chef_06",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第7问：安排低钠食谱",
+        "output": "已根据 retrieve_evidence 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 1.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "retrieve_evidence"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.01629999997021514,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "chef_07",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第8问：安排低钠食谱",
+        "output": "已根据 calculate_nutrition、search_local_recipes、verify_citation 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 3.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "search_local_recipes",
+          "calculate_nutrition",
+          "verify_citation"
+        ],
+        "cost_tokens": 240,
+        "latency_ms": 0.04089999993084348,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "chef_08",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第9问：安排低钠食谱",
+        "output": "已根据 calculate_nutrition 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 2.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "calculate_nutrition",
+          "calculate_nutrition"
+        ],
+        "cost_tokens": 140,
+        "latency_ms": 0.02949999998236308,
+        "status": "ok",
+        "error": "PARAM_INVALID: Input should be a valid list"
+      },
+      {
+        "case_id": "chef_09",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第10问：安排低钠食谱",
+        "output": "已根据 drug_food_interaction 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 2.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "drug_food_interaction",
+          "drug_food_interaction"
+        ],
+        "cost_tokens": 220,
+        "latency_ms": 0.027399999908084283,
+        "status": "ok",
+        "error": "PARAM_INVALID: Field required"
+      },
+      {
+        "case_id": "chef_10",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第11问：安排低钠食谱",
+        "output": "已根据 retrieve_evidence 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 4.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "retrieve_evidence"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.028299999939918052,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "chef_11",
+        "target": "ai_chef_agent",
+        "version": "v3.0-stage10",
+        "input": "高血压患者第12问：安排低钠食谱",
+        "output": "已根据 drug_food_interaction 的结果给出回答。",
+        "success": true,
+        "metrics": {
+          "steps": 1.0,
+          "tool_selection": 1.0
+        },
+        "trace": [
+          "drug_food_interaction"
+        ],
+        "cost_tokens": 110,
+        "latency_ms": 0.016700000060154707,
+        "status": "ok",
+        "error": ""
+      }
+    ]
+  },
+  {
+    "target": "medevirag_rag",
+    "version": "v0.3-eval",
+    "run_id": "medevirag_rag_20261112T112524_baseline",
+    "case_count": 12,
+    "success_rate": 1.0,
+    "error_rate": 0.0,
+    "total_tokens": 1560,
+    "estimated_cost_yuan": 0.00156,
+    "avg_latency_ms": 0.0029,
+    "p95_latency_ms": 0.0063,
+    "records": [
+      {
+        "case_id": "rag_00",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第1问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.006299999995462713,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_01",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第2问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0033999999686784577,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_02",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第3问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.00280000017482962,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_03",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第4问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0026000000161729986,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_04",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第5问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0026000000161729986,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_05",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第6问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0026000000161729986,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_06",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第7问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0025000001642183634,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_07",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第8问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0026000000161729986,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_08",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第9问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0026000000161729986,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_09",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第10问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0025000001642183634,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_10",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第11问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.0025000001642183634,
+        "status": "ok",
+        "error": ""
+      },
+      {
+        "case_id": "rag_11",
+        "target": "medevirag_rag",
+        "version": "v0.3-eval",
+        "input": "高血压诊断标准第12问：诊室血压阈值是多少？",
+        "output": "已按证据作答[1]",
+        "success": true,
+        "metrics": {
+          "recall_at_10": 1.0
+        },
+        "trace": [
+          "retrieve_evidence(top_k=10)"
+        ],
+        "cost_tokens": 130,
+        "latency_ms": 0.002300000005561742,
+        "status": "ok",
+        "error": ""
+      }
+    ]
+  }
+]

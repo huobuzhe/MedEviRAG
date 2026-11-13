@@ -1,0 +1,19 @@
+[PASS] A1 重排器确定性 :: 5 passed, 1 warning in 8.99s
+[PASS] A2 重排延迟不超预算 :: K=20 P95=229.7ms (≤300), K=50 P95=555.0ms (≤800)
+[PASS] A3 重排净收益（不足则 R2 否决并留档） :: ΔMRR=0.0557<0.10 → R2 否决重排；retrieval.yaml rerank.enabled=False (应为 False)；直通 Top8 已生效
+[PASS] A4 候选档位决策有数据支撑 :: 三档齐全=True, 选定K=20, 报告含结论理由=True
+[SKIP] A5 引用落点正确率 :: 离线桩 landing=1.0（链路已跑通）；真实模型合规率须 --real 才能作门禁，本机无 API key
+[SKIP] A6 句级支撑率 :: 离线桩 support=1.0（链路已跑通）；真实句级支撑率须 --real 才能作门禁
+[PASS] A7 verifier 拦得住注入的非法 citation :: [C9] 注入被拦: 1 passed, 6 deselected, 1 warning in 6.89s
+[PASS] A8 重试有硬上限 :: 重试硬上限: 2 passed, 5 deselected, 1 warning in 6.86s
+[PASS] A9 引用回链字段完整（12 键） :: {"keys": 12, "same": true, "page_int": true, "bbox4": true}
+[PASS] A10 8 节点图 + 埋点 :: 8 节点 + trace 8 键: 2 passed, 5 deselected, 1 warning in 6.88s
+[PASS] A11 越界零 LLM 调用 :: 越界 0 次 LLM: 1 passed, 6 deselected in 0.74s
+[PASS] A12 图内 P95 ≤ 6s :: 图内 P95=83.2ms≤6000ms
+[PASS] A13 无 Docker / 无 API 全绿 :: unit+integration: 282 passed, 1 warning in 20.26s
+[PASS] A14 预算护栏生效 :: 预算护栏: 5 passed in 0.05s
+
+======================================================================
+A1-A14: PASS=12  FAIL=0  SKIP=2
+SKIP 原因：A5=离线桩 landing=1.0（链路已跑通）；真实模型合规率须 --real 才能作门禁，本机无 API key；A6=离线桩 support=1.0（链路已跑通）；真实句级支撑率须 --real 才能作门禁
+报告: F:\MedEviRAG\data\reports\s3_acceptance.json

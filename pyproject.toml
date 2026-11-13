@@ -1,0 +1,53 @@
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+src = ["src", "tests"]
+exclude = [".venv", "data", "models", "docs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+ignore = ["E501", "B008", "RUF001", "RUF002", "RUF003"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S101", "SIM117"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["medevirag"]
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+ignore_missing_imports = true
+files = ["src/medevirag"]
+mypy_path = "src"
+plugins = []
+
+[[tool.mypy.overrides]]
+module = ["rank_bm25.*", "jieba.*", "fitz.*", "pymupdf.*", "milvus_lite.*", "pymilvus.*", "faiss.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-ra --strict-markers --strict-config"
+asyncio_mode = "auto"
+markers = [
+    "docker: requires a running Docker daemon (skipped automatically when unavailable)",
+    "gpu: requires CUDA",
+    "slow: long-running",
+    "network: requires real network access",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+]
+
+[tool.coverage.run]
+source = ["src/medevirag"]
+branch = true
+
+[tool.coverage.report]
+exclude_lines = ["pragma: no cover", "if TYPE_CHECKING:", "raise NotImplementedError", "if __name__ == .__main__.:"]

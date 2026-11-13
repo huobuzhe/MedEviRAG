@@ -1,0 +1,89 @@
+{
+  "baseline": [
+    {
+      "target": "ai_chef_agent",
+      "case_count": 12,
+      "success_rate": 1.0,
+      "error_rate": 0.3333,
+      "total_tokens": 1940
+    },
+    {
+      "target": "medevirag_rag",
+      "case_count": 12,
+      "success_rate": 1.0,
+      "error_rate": 0.0,
+      "total_tokens": 1560
+    }
+  ],
+  "current": [
+    {
+      "target": "ai_chef_agent",
+      "case_count": 12,
+      "success_rate": 0.5,
+      "error_rate": 0.5,
+      "total_tokens": 2360
+    },
+    {
+      "target": "medevirag_rag",
+      "case_count": 12,
+      "success_rate": 0.0,
+      "error_rate": 1.0,
+      "total_tokens": 1560
+    }
+  ],
+  "comparisons": [
+    {
+      "target": "ai_chef_agent",
+      "baseline": "ai_chef_agent_20261112T112524_baseline",
+      "current": "ai_chef_agent_20261112T112524_current",
+      "deltas": {
+        "success_rate": -0.5,
+        "error_rate": 0.1667,
+        "total_tokens": 420,
+        "avg_latency_ms": -0.0133
+      },
+      "flags": [
+        "SUCCESS_DROP success_rate: 1.0 -> 0.5",
+        "ERROR_RISE error_rate: 0.3333 -> 0.5"
+      ],
+      "gate": "BLOCKED"
+    },
+    {
+      "target": "medevirag_rag",
+      "baseline": "medevirag_rag_20261112T112524_baseline",
+      "current": "medevirag_rag_20261112T112524_current",
+      "deltas": {
+        "success_rate": -1.0,
+        "error_rate": 1.0,
+        "total_tokens": 0,
+        "avg_latency_ms": -0.0001
+      },
+      "flags": [
+        "SUCCESS_DROP success_rate: 1.0 -> 0.0",
+        "ERROR_RISE error_rate: 0.0 -> 1.0"
+      ],
+      "gate": "BLOCKED"
+    }
+  ],
+  "reflow": {
+    "n": 18,
+    "path": "F:\\MedEviRAG\\data\\eval\\layers\\reflow_candidates.jsonl",
+    "source_run_id": "p3_unified_current",
+    "quarantine": true
+  },
+  "targets_registered": 2,
+  "protocol_fields": [
+    "case_id",
+    "target",
+    "version",
+    "input",
+    "output",
+    "success",
+    "metrics",
+    "trace",
+    "cost_tokens",
+    "latency_ms",
+    "status",
+    "error"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "purpose": "证明改动检索参数导致质量下降时，CI 门禁会真的拦住，而不是只报个数字",
+  "layer": "core_80",
+  "baseline_run_id": "20261113T0614_p0base_c77073b64dfc_core_80_k10",
+  "degraded_run_id": "20261113T0614_p0deg_c77073b64dfc_core_80_k1",
+  "baseline_top_k": 10,
+  "degraded_top_k": 1,
+  "baseline_metrics": {
+    "recall_at_10": 1.0,
+    "hit_at_10": 1.0,
+    "mrr": 1.0,
+    "ndcg_at_10": 1.0
+  },
+  "degraded_metrics": {
+    "recall_at_10": 0.0,
+    "hit_at_10": 0.0,
+    "mrr": 0.0,
+    "ndcg_at_10": 0.0
+  },
+  "gate_status": "BLOCKED",
+  "gate_problems": [
+    "THRESHOLD_FAIL recall_at_10=0.0 目标>=0.85",
+    "THRESHOLD_FAIL mrr=0.0 目标>=0.62",
+    "THRESHOLD_FAIL ndcg_at_10=0.0 目标>=0.7",
+    "HARD_DROP recall_at_10: 1.0 -> 0.0 (delta=-1.0)",
+    "HARD_DROP mrr: 1.0 -> 0.0 (delta=-1.0)",
+    "HARD_DROP ndcg_at_10: 1.0 -> 0.0 (delta=-1.0)"
+  ],
+  "publishable": false,
+  "note": "两次均为 pipeline_selfcheck（offline judge 桩）；本实验只验证门禁链路，检索指标来自确定性被测实现，不可当作系统质量结论"
+}

@@ -1,0 +1,11 @@
+{
+  "deterministic": true,
+  "variants": [
+    "rrf",
+    "weighted-sum",
+    "dense-only",
+    "bm25-only"
+  ],
+  "n_queries": 10,
+  "mismatch": []
+}

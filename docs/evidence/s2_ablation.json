@@ -1,0 +1,446 @@
+{
+  "generated_at": "2026-10-24T09:37:43+08:00",
+  "config_hash": "sha256:b18ced496e95",
+  "eval_set": "data/eval/retrieval_dev60.jsonl",
+  "split": "dev",
+  "n_cases": 48,
+  "topk": 10,
+  "variants": {
+    "dense-only": {
+      "recall@10": 0.9062,
+      "mrr": 0.7951,
+      "ndcg@10": 0.7312
+    },
+    "bm25-only": {
+      "recall@10": 0.8646,
+      "mrr": 0.7431,
+      "ndcg@10": 0.6775
+    },
+    "rrf": {
+      "recall@10": 0.9271,
+      "mrr": 0.8351,
+      "ndcg@10": 0.7552
+    },
+    "weighted-sum": {
+      "recall@10": 0.9271,
+      "mrr": 0.8538,
+      "ndcg@10": 0.7648
+    }
+  },
+  "by_case_type": {
+    "exact_term": {
+      "dense-only": {
+        "recall@10": 0.9375,
+        "mrr": 0.776,
+        "ndcg@10": 0.7553
+      },
+      "bm25-only": {
+        "recall@10": 0.9375,
+        "mrr": 0.7917,
+        "ndcg@10": 0.7583
+      },
+      "rrf": {
+        "recall@10": 1.0,
+        "mrr": 0.8802,
+        "ndcg@10": 0.82
+      },
+      "weighted-sum": {
+        "recall@10": 1.0,
+        "mrr": 0.8771,
+        "ndcg@10": 0.8149
+      }
+    },
+    "multi_hop": {
+      "dense-only": {
+        "recall@10": 0.7812,
+        "mrr": 0.7812,
+        "ndcg@10": 0.6491
+      },
+      "bm25-only": {
+        "recall@10": 0.6562,
+        "mrr": 0.6736,
+        "ndcg@10": 0.5502
+      },
+      "rrf": {
+        "recall@10": 0.7812,
+        "mrr": 0.8125,
+        "ndcg@10": 0.6727
+      },
+      "weighted-sum": {
+        "recall@10": 0.7812,
+        "mrr": 0.8042,
+        "ndcg@10": 0.6775
+      }
+    },
+    "semantic": {
+      "dense-only": {
+        "recall@10": 1.0,
+        "mrr": 0.8281,
+        "ndcg@10": 0.7892
+      },
+      "bm25-only": {
+        "recall@10": 1.0,
+        "mrr": 0.7641,
+        "ndcg@10": 0.7239
+      },
+      "rrf": {
+        "recall@10": 1.0,
+        "mrr": 0.8125,
+        "ndcg@10": 0.7728
+      },
+      "weighted-sum": {
+        "recall@10": 1.0,
+        "mrr": 0.8802,
+        "ndcg@10": 0.802
+      }
+    }
+  },
+  "gold_overlap": {
+    "dense_gold_hits": 62,
+    "bm25_gold_hits": 62,
+    "gold_hit_intersection": 60,
+    "gold_hit_union": 64,
+    "jaccard": 0.9375
+  },
+  "filter": {
+    "input_total": 9600,
+    "kept_total": 8816,
+    "dropped_total": {
+      "evidence_level": 7,
+      "publish_year": 777
+    },
+    "relaxed_queries": 0,
+    "relaxed_detail": {},
+    "gold_filter_cost": {
+      "dropped_gold": [
+        {
+          "qid": "q047",
+          "split": "dev",
+          "chunk_id": "0527_153307_354#(1)#c02",
+          "reason": "publish_year",
+          "publish_year": "2008",
+          "doc_title": "登革热病例监测指南"
+        },
+        {
+          "qid": "q047",
+          "split": "dev",
+          "chunk_id": "0527_153307_354#(一)#c03",
+          "reason": "publish_year",
+          "publish_year": "2008",
+          "doc_title": "登革热病例监测指南"
+        }
+      ],
+      "metrics_without_filters": {
+        "recall@10": 0.9479,
+        "mrr": 0.8559,
+        "ndcg@10": 0.7707
+      }
+    }
+  },
+  "index": {
+    "source": "milvus-lite",
+    "uri": "./data/indexes/milvus_lite.db",
+    "collection": "chunks",
+    "N": 4023,
+    "model_id": "bge-m3",
+    "chunks_sha256": "f1ff159471a4a64d555f93ea62aa3387ce0303e55029da150a38f1dba1eedbc9",
+    "emb_sha256": "5c76b3c588ffac149c1512a4dc7476cb78746c0257c84fe4e90d8547ce65280a",
+    "ef": 64,
+    "parity": {
+      "generated_at": "2026-10-24T09:35:12+08:00",
+      "status": "skipped",
+      "reason": "no Milvus server reachable: MILVUS_SERVER_URI is unset, no pre-existing server on 127.0.0.1:19530, and the docker daemon is down. docker info stderr: failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.",
+      "lite_uri": "./data/indexes/milvus_lite.db",
+      "server_uri": null,
+      "n_queries": 10,
+      "min_overlap": 9,
+      "ok_queries": 0,
+      "detail": []
+    }
+  },
+  "frozen": {
+    "dense_topk": 50,
+    "bm25_topk": 50,
+    "rrf_k": 60,
+    "topk": 10,
+    "weighted_alpha": 0.5
+  },
+  "holdout": {
+    "split": "test",
+    "variant": "rrf",
+    "n_cases": 12,
+    "metrics": {
+      "recall@10": 0.75,
+      "mrr": 0.725,
+      "ndcg@10": 0.6482
+    },
+    "thresholds": {
+      "recall@10": 0.85,
+      "mrr": 0.62,
+      "ndcg@10": 0.7
+    },
+    "verdict": {
+      "recall@10": "FAIL",
+      "mrr": "PASS",
+      "ndcg@10": "FAIL"
+    },
+    "all_pass": false,
+    "category_counts": {
+      "hit": 8,
+      "recall_fail": 1,
+      "metadata_filtered": 1,
+      "multi_hop_partial": 2
+    },
+    "cases": [
+      {
+        "qid": "q005",
+        "case_type": "exact_term",
+        "difficulty": "medium",
+        "question": "糖尿病合并ASCVD 患者的LDL-C 目标值是多少？",
+        "gold": [
+          "0201_084005_469#1.4#c57"
+        ],
+        "hit_ids": [
+          "0201_084005_469#1.4#c57"
+        ],
+        "missed_ids": [],
+        "miss_reasons": {},
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8262,
+        "category": "hit"
+      },
+      {
+        "qid": "q010",
+        "case_type": "exact_term",
+        "difficulty": "medium",
+        "question": "糖尿病患者按健康状况分层时的血压和血脂管理目标分别是什么？",
+        "gold": [
+          "1031_100011_575#8.3#c257"
+        ],
+        "hit_ids": [],
+        "missed_ids": [
+          "1031_100011_575#8.3#c257"
+        ],
+        "miss_reasons": {
+          "1031_100011_575#8.3#c257": "recall_miss"
+        },
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.1377,
+        "category": "recall_fail"
+      },
+      {
+        "qid": "q015",
+        "case_type": "exact_term",
+        "difficulty": "easy",
+        "question": "慢阻肺患者接种流感疫苗和肺炎链球菌疫苗的推荐强度分别是什么？",
+        "gold": [
+          "0727_162437_802#(三)#c42"
+        ],
+        "hit_ids": [
+          "0727_162437_802#(三)#c42"
+        ],
+        "missed_ids": [],
+        "miss_reasons": {},
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "category": "hit"
+      },
+      {
+        "qid": "q020",
+        "case_type": "exact_term",
+        "difficulty": "medium",
+        "question": "登革热临床诊断病例对白细胞计数和血小板计数的要求是什么？",
+        "gold": [
+          "0527_153307_354#(1)#c02"
+        ],
+        "hit_ids": [],
+        "missed_ids": [
+          "0527_153307_354#(1)#c02"
+        ],
+        "miss_reasons": {
+          "0527_153307_354#(1)#c02": "publish_year"
+        },
+        "recall": 0.0,
+        "mrr": 0.0,
+        "ndcg": 0.0,
+        "category": "metadata_filtered"
+      },
+      {
+        "qid": "q025",
+        "case_type": "semantic",
+        "difficulty": "medium",
+        "question": "做体重管理时每天的能量摄入应该比平时降低多少？",
+        "gold": [
+          "1031_101439_126#三、#c08"
+        ],
+        "hit_ids": [
+          "1031_101439_126#三、#c08"
+        ],
+        "missed_ids": [],
+        "miss_reasons": {},
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8262,
+        "category": "hit"
+      },
+      {
+        "qid": "q030",
+        "case_type": "semantic",
+        "difficulty": "medium",
+        "question": "服用二甲双胍的患者使用碘化对比剂做造影前后要注意什么？",
+        "gold": [
+          "1031_095848_337#(三)#c16"
+        ],
+        "hit_ids": [
+          "1031_095848_337#(三)#c16"
+        ],
+        "missed_ids": [],
+        "miss_reasons": {},
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8262,
+        "category": "hit"
+      },
+      {
+        "qid": "q035",
+        "case_type": "semantic",
+        "difficulty": "medium",
+        "question": "二期梅毒的皮肤损害有什么特点，病期多长？",
+        "gold": [
+          "0123_130133_511#4.2.2#c05"
+        ],
+        "hit_ids": [
+          "0123_130133_511#4.2.2#c05"
+        ],
+        "missed_ids": [],
+        "miss_reasons": {},
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.9243,
+        "category": "hit"
+      },
+      {
+        "qid": "q040",
+        "case_type": "semantic",
+        "difficulty": "medium",
+        "question": "间日疟和卵形疟应该怎么治疗，治愈后还要做什么？",
+        "gold": [
+          "0531_112855_497#(一)#c09"
+        ],
+        "hit_ids": [
+          "0531_112855_497#(一)#c09"
+        ],
+        "missed_ids": [],
+        "miss_reasons": {},
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 1.0,
+        "category": "hit"
+      },
+      {
+        "qid": "q045",
+        "case_type": "multi_hop",
+        "difficulty": "hard",
+        "question": "糖尿病合并ASCVD 患者与单纯动脉粥样硬化性缺血性脑卒中患者的LDL-C 目标值分别是多少？",
+        "gold": [
+          "0201_084005_469#1.4#c57",
+          "0201_084005_469#h1185#c59"
+        ],
+        "hit_ids": [
+          "0201_084005_469#1.4#c57"
+        ],
+        "missed_ids": [
+          "0201_084005_469#h1185#c59"
+        ],
+        "miss_reasons": {
+          "0201_084005_469#h1185#c59": "recall_miss"
+        },
+        "recall": 0.5,
+        "mrr": 1.0,
+        "ndcg": 0.5563,
+        "category": "multi_hop_partial"
+      },
+      {
+        "qid": "q050",
+        "case_type": "multi_hop",
+        "difficulty": "medium",
+        "question": "血吸虫病病畜治疗用什么药，病人规范治疗后多久随访复查？",
+        "gold": [
+          "0621_144019_327#5.2.3#c21",
+          "0621_143946_131#(一)#c08"
+        ],
+        "hit_ids": [
+          "0621_144019_327#5.2.3#c21",
+          "0621_143946_131#(一)#c08"
+        ],
+        "missed_ids": [],
+        "miss_reasons": {},
+        "recall": 1.0,
+        "mrr": 1.0,
+        "ndcg": 0.8619,
+        "category": "hit"
+      },
+      {
+        "qid": "q055",
+        "case_type": "multi_hop",
+        "difficulty": "hard",
+        "question": "间日疟的治疗方案和疟疾突发疫情的判定标准分别是什么？",
+        "gold": [
+          "0531_112855_497#(一)#c09",
+          "0531_112855_497#(一)#c14"
+        ],
+        "hit_ids": [
+          "0531_112855_497#(一)#c14"
+        ],
+        "missed_ids": [
+          "0531_112855_497#(一)#c09"
+        ],
+        "miss_reasons": {
+          "0531_112855_497#(一)#c09": "recall_miss"
+        },
+        "recall": 0.5,
+        "mrr": 0.2,
+        "ndcg": 0.2152,
+        "category": "multi_hop_partial"
+      },
+      {
+        "qid": "q060",
+        "case_type": "multi_hop",
+        "difficulty": "medium",
+        "question": "血吸虫病病例报告后如何复核与订正，监测工作对检测试剂有什么要求？",
+        "gold": [
+          "0531_112531_215#(一)#c03",
+          "0531_112531_215#五、#c13"
+        ],
+        "hit_ids": [
+          "0531_112531_215#(一)#c03",
+          "0531_112531_215#五、#c13"
+        ],
+        "missed_ids": [],
+        "miss_reasons": {},
+        "recall": 1.0,
+        "mrr": 0.5,
+        "ndcg": 0.6045,
+        "category": "hit"
+      }
+    ]
+  },
+  "interpretation": {
+    "text": "1) **dense-only vs bm25-only**：dev 上 dense-only Recall@10 = 0.9062，bm25-only = 0.8646，差值 +0.0416。按 case_type 拆开看：exact_term 组 dense 0.9375 vs bm25 0.9375（两路持平）、semantic 组 dense 1.0000 vs bm25 1.0000（两路持平）、multi_hop 组 dense 0.7812 vs bm25 0.6562（dense 更强）。字面命中靠 BM25 的倒排精确匹配，改写/近义表述靠 dense 的语义相似，所以两路的强弱必须分组看——单看总量会掩盖它们在 exact_term 与 semantic 上的相反分工，这也正是融合有增益空间的前提。\n\n2) **RRF 是否 ≥ 两路各自最大值**：是，但增益很小。rrf Recall@10 = 0.9271 ≥ max(dense=0.9062, bm25=0.8646) = 0.9062，只高 +0.0209。原因就在两路 gold 命中的重叠度上：Jaccard = 0.9375（交 60 / 并 64），即两路几乎召回同一批 gold，RRF 能额外捞回的只有并集里那少数几个块。按 docs/03 §T7 的判据，重叠高时该去查 BM25 分词与 dense 模型是否在重复劳动，而不是继续调融合参数——本数据集上两路都已命中该命中的块，所以限制 Recall@10 上限的不是融合，而是召回本身（分组下降最大的是 multi_hop 组两路最低 0.6562）。\n\n3) **weighted-sum vs rrf**：两者几乎持平（weighted-sum 0.9271 vs rrf 0.9271，差 +0.0000）。本数据集上加权和并不劣于 RRF，但 weighted-sum 的 alpha=0.5 是在看 dev 之前就冻结的，一旦改成按 dev 调 alpha 就会过拟合；RRF 免调参、对两路量纲不敏感（BM25 分数域 3~35，余弦 [-1,1]，直接加权需要 min-max 归一化），工程上仍选 RRF（ADR-02）。",
+    "max_single_recall": 0.9062,
+    "rrf_ge_max": true,
+    "weighted_minus_rrf": 0.0
+  },
+  "timing": {
+    "variant": "rrf",
+    "n": 48,
+    "p50_ms": 8.28,
+    "p90_ms": 8.85,
+    "p95_ms": 9.47,
+    "mean_ms": 8.38,
+    "max_ms": 10.54
+  }
+}

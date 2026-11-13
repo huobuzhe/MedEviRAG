@@ -1,0 +1,17 @@
+[PASS] A1 拒答召回 >= 0.85 :: 拒答召回 1.000 (>=0.85)，夹具级指标
+[PASS] A2 过度拒答率 <= 0.12 :: 过度拒答率 0.000 (<=0.12)
+[PASS] A3 拒答理由正确率 >= 0.80 :: 理由正确率 1.000 (>=0.80)
+[PASS] A4 规则覆盖 17/17 :: 规则覆盖 17/17: 1 passed in 0.23s
+[PASS] A5 用例总数 >= 54 :: 用例总数 54 (>=54)
+[PASS] A6 置信度单调性 :: 单调性: 2 passed, 4 deselected in 0.22s
+[PASS] A7 复合分可分解 :: 四分量可分解: 6 passed in 0.22s
+[PASS] A8 模板免责声明 17/17 :: 17 模板含免责声明: 38 passed in 0.07s
+[PASS] A9 unknown 降级双分支 :: unknown 双分支: 1 passed, 61 deselected in 0.23s
+[PASS] A10 无 Docker CI 全绿 <=60s :: 无 Docker 全绿 exit=0，耗时 23s (<=60s)
+[PASS] A11 判定顺序 R-01 > R-13 :: R-01 优先于 R-13: 1 passed, 4 deselected in 0.22s
+[PASS] A12 拒答不带引用 :: 拒答不带引用: 5 passed in 0.22s
+[PASS] A13 零 API 消耗 :: 测试全绿=True，LEDGER.calls=0 (须=0)
+
+======================================================================
+A1-A13: PASS=13  FAIL=0  SKIP=0
+报告: F:\MedEviRAG\data\reports\s4_acceptance.json

@@ -1,0 +1,42 @@
+# 检索参数与硬过滤阈值（语义在 S2 生效）
+retrieval:
+  topk: 10                     # 对外返回条数
+  dense_topk: 50               # 向量单路召回
+  sparse_topk: 50              # BM25 单路召回
+  rrf_k: 60                    # RRF 平滑常数
+  fusion: rrf                  # 生产融合函数（rrf / weighted-sum，后者只用于消融对照）
+  weighted_alpha: 0.5          # weighted-sum 的 dense 权重，仅消融用
+# S3 追加：重排开关（docs/04 §T2 R2 否决分支）
+# 实测 dev60：最优 K=20 的 ΔMRR=0.0557 < 0.10 门禁，故本阶段默认关闭重排，
+# node_rerank 直通 RRF Top8。重排器代码保留，改 true 即可重新启用（需重跑 sweep 复核）。
+rerank:
+  enabled: false
+  top_k: 20                    # 启用时的候选池大小（sweep 收敛结果）
+  top_n: 8                     # 送入生成的证据条数
+filters:
+  max_publish_age_years: 10
+  min_evidence_level: "C"
+  # S2 追加：四条硬规则的具体取值（docs/03 §T6 冻结值）
+  publish_year_min: 2015
+  lang_allow: ["zh", "en"]
+  doc_type_allow: ["guideline", "consensus", "paper", "manual"]
+  evidence_level_exclude: ["D"]
+  min_keep: 8                  # 过滤后候选 < 8 时逐级放宽
+# S2 追加：Milvus 集合与索引参数（docs/03 §T3 冻结值）
+index:
+  collection: chunks
+  dense_dim: 1024
+  metric: IP
+  hnsw:
+    M: 16
+    efConstruction: 200
+    ef: 64                     # search 参数，不是建索引参数
+# S2 追加：BM25 参数（docs/03 §T4 冻结值）
+bm25:
+  k1: 1.5
+  b: 0.75
+  delta: 0.5
+  method: lucene
+  tokenizer: jieba
+  userdict: data/processed/medical_terms.txt
+  stopwords: data/processed/stopwords_zh.txt

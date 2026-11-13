@@ -1,0 +1,41 @@
+{
+  "n_cases": 60,
+  "topn": 8,
+  "baseline_no_rerank": {
+    "mrr@8": 0.8131,
+    "recall@8": 0.95,
+    "latency_p95_ms": 0.0
+  },
+  "by_k": {
+    "10": {
+      "mrr@8": 0.8575,
+      "recall@8": 0.95,
+      "latency_p50_ms": 108.9,
+      "latency_p95_ms": 115.3,
+      "delta_mrr": 0.0444
+    },
+    "20": {
+      "mrr@8": 0.8688,
+      "recall@8": 0.9667,
+      "latency_p50_ms": 212.1,
+      "latency_p95_ms": 229.7,
+      "delta_mrr": 0.0557
+    },
+    "50": {
+      "mrr@8": 0.8675,
+      "recall@8": 0.9667,
+      "latency_p50_ms": 512.9,
+      "latency_p95_ms": 555.0,
+      "delta_mrr": 0.0544
+    }
+  },
+  "verdict": {
+    "chosen_k": 20,
+    "delta_mrr": 0.0557,
+    "latency_p95_ms": 229.7,
+    "rerank_approved": false,
+    "notes": [
+      "K=20 与 K=50 收益差 < 0.01，收敛到较小档"
+    ]
+  }
+}

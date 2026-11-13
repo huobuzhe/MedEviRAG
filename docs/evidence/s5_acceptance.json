@@ -1,0 +1,73 @@
+{
+  "results": [
+    {
+      "id": "A1",
+      "name": "评测集 160/90/50/20 与 12 主题",
+      "status": "PASS",
+      "evidence": "160 条 = {'answerable': 90, 'multi_hop': 20, 'should_refuse': 50}，主题 12"
+    },
+    {
+      "id": "A2",
+      "name": "配额断言 pytest",
+      "status": "PASS",
+      "evidence": "3 passed in 0.04s"
+    },
+    {
+      "id": "A3",
+      "name": "dev/test 冻结 128/32",
+      "status": "PASS",
+      "evidence": "freeze rc=0，n={'dev': 128, 'test': 32}"
+    },
+    {
+      "id": "A4",
+      "name": "篡改 eval_set 被拦",
+      "status": "PASS",
+      "evidence": "篡改 exit=1，恢复 exit=0"
+    },
+    {
+      "id": "A5",
+      "name": "报告 md 四段",
+      "status": "PASS",
+      "evidence": "四段齐全"
+    },
+    {
+      "id": "A6",
+      "name": "九指标门禁（--real 口径）",
+      "status": "SKIP",
+      "evidence": "离线桩口径，真实门禁须 --real：recall_at_10=0.673; mrr=0.6; ndcg_at_10=0.749; faithfulness=1.0; refusal_recall=1.0; over_refusal_rate=1.0; refusal_reason_accuracy=0.46; citation_landing_rate=1.0; sentence_support_rate=0.0"
+    },
+    {
+      "id": "A7",
+      "name": "tests/eval 全绿",
+      "status": "PASS",
+      "evidence": "28 passed in 0.24s"
+    },
+    {
+      "id": "A8",
+      "name": "门禁反向测试",
+      "status": "PASS",
+      "evidence": "反向测试：6 passed in 0.20s"
+    },
+    {
+      "id": "A9",
+      "name": "跨族断言",
+      "status": "PASS",
+      "evidence": "2 passed, 6 deselected in 0.05s"
+    },
+    {
+      "id": "A10",
+      "name": "零 API 消耗",
+      "status": "PASS",
+      "evidence": "tests 293 passed, 1 warning in 12.37s，LEDGER.calls=0"
+    },
+    {
+      "id": "A11",
+      "name": "regression self-delta",
+      "status": "PASS",
+      "evidence": "self-delta exit=2，门禁触发=True"
+    }
+  ],
+  "pass": 10,
+  "fail": 0,
+  "skip": 1
+}

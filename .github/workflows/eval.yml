@@ -1,0 +1,48 @@
+name: P0 Eval Gate
+
+on:
+  pull_request:
+    paths:
+      - "src/medevirag/eval/**"
+      - "scripts/eval/**"
+      - "configs/eval.yaml"
+      - "data/eval/**"
+      - "tests/eval/**"
+  workflow_dispatch: {}
+
+jobs:
+  eval-selfcheck:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: src
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: Build and verify three eval layers
+        run: |
+          python -m medevirag.eval.layers build
+          python -m medevirag.eval.layers verify
+
+      - name: Unit tests for eval pipeline
+        run: python -m pytest tests/eval -q
+
+      - name: Prove the gate blocks a degraded retrieval
+        run: python scripts/eval/degrade_probe.py
+
+      - name: Upload eval evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p0-eval-reports
+          path: data/reports/

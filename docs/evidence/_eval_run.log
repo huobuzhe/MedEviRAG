@@ -1,0 +1,13 @@
+F:\MedEviRAG\.venv\lib\site-packages\transformers\utils\hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Building prefix dict from the default dictionary ...
+Loading model from cache F:\MedEviRAG\jieba.cache
+Loading model cost 0.394 seconds.
+Prefix dict has been built successfully.
+filter relaxed: evidence_level (候选不足 min_keep=8)
+filter relaxed: doc_type (候选不足 min_keep=8)
+filter relaxed: publish_year (候选不足 min_keep=8)
+filter relaxed: evidence_level (候选不足 min_keep=8)
+filter relaxed: doc_type (候选不足 min_keep=8)
+filter relaxed: publish_year (候选不足 min_keep=8)
+[eval] 20261024T1205_nogit_b44d87fc7246_dev n=160 faithfulness=1.0 recall@10=0.6727272727272727

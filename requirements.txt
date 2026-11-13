@@ -1,0 +1,31 @@
+# 运行时依赖锁定（pip 口径，见 docs/01 §T1 与 §7 FAQ：本项目不用 uv sync，
+# 实测 uv sync 会把 --system-site-packages 继承来的 torch 等包一并裁剪，62 个包削到 5 个）。
+# 安装：pip install -r requirements.txt
+fastapi==0.115.2
+uvicorn==0.31.1
+pydantic==2.9.2
+pydantic-settings==2.5.2
+python-dotenv==1.2.4
+httpx==0.27.2
+tenacity==9.0.0
+orjson==3.13.0
+pymilvus==2.6.3
+milvus-lite==3.2.2
+faiss-cpu==1.15.1
+grpcio==1.84.1
+pyarrow==25.0.1
+numpy==1.26.4
+rank-bm25==0.2.2
+jieba==0.42.1
+sentence-transformers==3.2.1
+# low_cpu_mem_usage=True 加载 bge-m3 必需（否则默认 fp32 full-materialize 在本机触发 access violation）
+accelerate==0.34.2
+transformers==4.45.2
+tokenizers==0.20.1
+safetensors==0.4.5
+PyMuPDF==1.24.13
+redis==5.1.1
+psycopg[binary]==3.2.3
+langchain-core==0.3.13
+langgraph==0.2.35
+structlog==24.4.0
