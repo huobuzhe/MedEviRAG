@@ -1,0 +1,24 @@
+# 环境与密钥（不要提交真实 .env）
+.env
+.env.*
+!.env.example
+# 虚拟环境与缓存
+.venv/
+.venv3/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+# 大文件、数据与权重（本机生成，不入库）
+data/
+models/
+*.cache
+*.db
+*.sqlite
+# 编辑器与系统
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
