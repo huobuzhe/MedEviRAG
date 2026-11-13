@@ -1,0 +1,15 @@
+[PASS] A1 评测集 160/90/50/20 与 12 主题 :: 160 条 = {'answerable': 90, 'multi_hop': 20, 'should_refuse': 50}，主题 12
+[PASS] A2 配额断言 pytest :: 3 passed in 0.04s
+[PASS] A3 dev/test 冻结 128/32 :: freeze rc=0，n={'dev': 128, 'test': 32}
+[PASS] A4 篡改 eval_set 被拦 :: 篡改 exit=1，恢复 exit=0
+[PASS] A5 报告 md 四段 :: 四段齐全
+[SKIP] A6 九指标门禁（--real 口径） :: 离线桩口径，真实门禁须 --real：recall_at_10=0.673; mrr=0.6; ndcg_at_10=0.749; faithfulness=1.0; refusal_recall=1.0; over_refusal_rate=1.0; refusal_reason_accuracy=0.46; citation_landing_rate=1.0; sentence_support_rate=0.0
+[PASS] A7 tests/eval 全绿 :: 28 passed in 0.24s
+[PASS] A8 门禁反向测试 :: 反向测试：6 passed in 0.20s
+[PASS] A9 跨族断言 :: 2 passed, 6 deselected in 0.05s
+[PASS] A10 零 API 消耗 :: tests 293 passed, 1 warning in 12.37s，LEDGER.calls=0
+[PASS] A11 regression self-delta :: self-delta exit=2，门禁触发=True
+
+======================================================================
+A1-A11: PASS=10  FAIL=0  SKIP=1
+报告: F:\MedEviRAG\data\reports\s5_acceptance.json

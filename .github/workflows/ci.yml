@@ -1,0 +1,48 @@
+# CI 门禁：不依赖 docker daemon、不依赖任何 API Key、不联网（docs/01 §T9）。
+# 三条纪律：①只用 FakeLLM ②docker 用例自动 skip ③真实模型调用数断言为 0。
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+      - name: ruff
+        run: ruff check .
+      - name: mypy
+        run: mypy
+      - name: 单测（FakeLLM，不出网）
+        run: pytest -q --cov=medevirag --cov-report=term-missing
+      - name: doctor 冒烟（docker 不存在应为 WARN 且退出码 0）
+        run: PYTHONPATH=src python -m medevirag.cli doctor
+      - name: compose 语法门禁（无需 daemon）
+        run: docker compose -f docker/docker-compose.yml config --services
+  # S2：索引与混合召回的无模型门禁。用 tests/fixtures/chunks_small.jsonl（300 条真实块）
+  # + md5 派生的确定性假向量建 Milvus Lite 库，不需要 bge-m3 权重、不需要 docker daemon、不出网。
+  s2-lite:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+      - name: 融合与过滤单测
+        run: pytest tests/unit/test_fusion.py tests/unit/test_filters.py -q
+      - name: Milvus Lite 端到端检索（300 条 fixture，无模型无 docker）
+        run: pytest tests/integration/test_lite_retrieval.py -q

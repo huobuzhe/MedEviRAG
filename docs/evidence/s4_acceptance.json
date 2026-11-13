@@ -1,0 +1,85 @@
+{
+  "results": [
+    {
+      "id": "A1",
+      "name": "拒答召回 >= 0.85",
+      "status": "PASS",
+      "evidence": "拒答召回 1.000 (>=0.85)，夹具级指标"
+    },
+    {
+      "id": "A2",
+      "name": "过度拒答率 <= 0.12",
+      "status": "PASS",
+      "evidence": "过度拒答率 0.000 (<=0.12)"
+    },
+    {
+      "id": "A3",
+      "name": "拒答理由正确率 >= 0.80",
+      "status": "PASS",
+      "evidence": "理由正确率 1.000 (>=0.80)"
+    },
+    {
+      "id": "A4",
+      "name": "规则覆盖 17/17",
+      "status": "PASS",
+      "evidence": "规则覆盖 17/17: 1 passed in 0.23s"
+    },
+    {
+      "id": "A5",
+      "name": "用例总数 >= 54",
+      "status": "PASS",
+      "evidence": "用例总数 54 (>=54)"
+    },
+    {
+      "id": "A6",
+      "name": "置信度单调性",
+      "status": "PASS",
+      "evidence": "单调性: 2 passed, 4 deselected in 0.22s"
+    },
+    {
+      "id": "A7",
+      "name": "复合分可分解",
+      "status": "PASS",
+      "evidence": "四分量可分解: 6 passed in 0.22s"
+    },
+    {
+      "id": "A8",
+      "name": "模板免责声明 17/17",
+      "status": "PASS",
+      "evidence": "17 模板含免责声明: 38 passed in 0.07s"
+    },
+    {
+      "id": "A9",
+      "name": "unknown 降级双分支",
+      "status": "PASS",
+      "evidence": "unknown 双分支: 1 passed, 61 deselected in 0.23s"
+    },
+    {
+      "id": "A10",
+      "name": "无 Docker CI 全绿 <=60s",
+      "status": "PASS",
+      "evidence": "无 Docker 全绿 exit=0，耗时 23s (<=60s)"
+    },
+    {
+      "id": "A11",
+      "name": "判定顺序 R-01 > R-13",
+      "status": "PASS",
+      "evidence": "R-01 优先于 R-13: 1 passed, 4 deselected in 0.22s"
+    },
+    {
+      "id": "A12",
+      "name": "拒答不带引用",
+      "status": "PASS",
+      "evidence": "拒答不带引用: 5 passed in 0.22s"
+    },
+    {
+      "id": "A13",
+      "name": "零 API 消耗",
+      "status": "PASS",
+      "evidence": "测试全绿=True，LEDGER.calls=0 (须=0)"
+    }
+  ],
+  "pass": 13,
+  "fail": 0,
+  "skip": 0
+}

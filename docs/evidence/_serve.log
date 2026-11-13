@@ -1,0 +1,39 @@
+INFO:     Started server process [35332]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8111 (Press CTRL+C to quit)
+INFO:     127.0.0.1:62463 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62464 - "GET /readyz HTTP/1.1" 503 Service Unavailable
+F:\MedEviRAG\.venv\lib\site-packages\transformers\utils\hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Building prefix dict from the default dictionary ...
+Loading model from cache F:\MedEviRAG\jieba.cache
+Loading model cost 0.403 seconds.
+Prefix dict has been built successfully.
+INFO:     127.0.0.1:62515 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62529 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62531 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62552 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62554 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62553 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62555 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62556 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62558 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62557 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62562 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62559 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62570 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62568 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62563 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62571 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62569 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62560 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62561 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62564 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62567 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62566 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62565 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62608 - "POST /v1/ask HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:62693 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62694 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62695 - "GET /healthz HTTP/1.1" 200 OK

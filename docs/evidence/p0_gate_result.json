@@ -1,0 +1,43 @@
+{
+  "status": "BLOCKED",
+  "exit_code": 2,
+  "current": "F:\\MedEviRAG\\data\\reports\\eval_20261113T0614_p0deg_c77073b64dfc_core_80_k1.json",
+  "baseline": "F:\\MedEviRAG\\data\\reports\\eval_20261113T0614_p0base_c77073b64dfc_core_80_k10.json",
+  "run_id": "20261113T0614_p0deg_c77073b64dfc_core_80_k1",
+  "llm_mode": "fake",
+  "trust_level": "pipeline_selfcheck",
+  "publishable": false,
+  "frozen_set_sha256": "8e2486f2ddbb79ba433aacb2f4f6d54b",
+  "problems": [
+    "THRESHOLD_FAIL recall_at_10=0.0 目标>=0.85",
+    "THRESHOLD_FAIL mrr=0.0 目标>=0.62",
+    "THRESHOLD_FAIL ndcg_at_10=0.0 目标>=0.7",
+    "HARD_DROP recall_at_10: 1.0 -> 0.0 (delta=-1.0)",
+    "HARD_DROP mrr: 1.0 -> 0.0 (delta=-1.0)",
+    "HARD_DROP ndcg_at_10: 1.0 -> 0.0 (delta=-1.0)"
+  ],
+  "notes": [
+    "PUBLISH_BLOCKED: 本次为 fake / pipeline_selfcheck，judge 类指标不可作为发布或简历数字"
+  ],
+  "noise_band": [],
+  "diff_count": 0,
+  "gated_metrics": {
+    "recall_at_10": 0.0,
+    "mrr": 0.0,
+    "ndcg_at_10": 0.0,
+    "citation_landing_rate": 1.0,
+    "sentence_support_rate": 1.0,
+    "faithfulness": 1.0,
+    "refusal_recall": 1.0,
+    "over_refusal_rate": 0.0,
+    "refusal_reason_accuracy": 1.0
+  },
+  "judge_keys_unusable_when_fake": [
+    "faithfulness",
+    "evidence_recall",
+    "refusal_dim",
+    "citation_landing_rate",
+    "sentence_support_rate",
+    "refusal_reason_accuracy"
+  ]
+}

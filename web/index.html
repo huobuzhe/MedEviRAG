@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<title>MedEviRAG · 循证问答</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; display: flex; height: 100vh; }
+  #left { flex: 1; padding: 24px; overflow-y: auto; }
+  #right { width: 380px; border-left: 1px solid #ddd; padding: 16px; overflow-y: auto; }
+  #q { width: 70%; padding: 10px; font-size: 15px; }
+  #go { padding: 10px 18px; font-size: 15px; cursor: pointer; }
+  .meta { display: flex; gap: 12px; align-items: center; margin: 12px 0; font-size: 13px; color: #555; }
+  .pill { padding: 2px 10px; border-radius: 10px; background: #e8f4e8; }
+  .meta.refused .pill { background: #f8e8e8; }
+  .meta.partial .pill { background: #f8f0d8; }
+  .ans { line-height: 1.8; font-size: 15px; }
+  .cite { border: none; background: #eef; color: #33d; cursor: pointer; padding: 0 2px; }
+  .bad { color: #d33; }
+  .disclaimer { color: #999; font-size: 12px; }
+  .card { border: 1px solid #ddd; border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+  .card.flash { outline: 2px solid #4a6; }
+  .path, .lvl { font-size: 12px; color: #666; }
+  blockquote { margin: 6px 0; padding: 6px 10px; background: #f7f7f7; font-size: 13px; }
+  .more { cursor: pointer; }
+  .d-text { white-space: pre-wrap; font-size: 12px; background: #fafafa; padding: 8px; }
+  .err { color: #c33; }
+  .feedback button { margin-right: 8px; cursor: pointer; }
+</style>
+</head>
+<body>
+  <div id="left">
+    <h2>中文医学指南循证问答</h2>
+    <div><input id="q" placeholder="例如：成人高血压的诊断标准是什么" /><button id="go">提问</button></div>
+    <div id="answer"></div>
+  </div>
+  <div id="right"><h3>引用溯源</h3><div id="citations"></div></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

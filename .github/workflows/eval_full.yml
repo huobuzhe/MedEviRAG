@@ -1,0 +1,65 @@
+name: P0-P3 Eval Full Pipeline
+
+on:
+  pull_request:
+    paths:
+      - "src/medevirag/eval/**"
+      - "src/medevirag/agent/**"
+      - "scripts/eval/**"
+      - "configs/eval.yaml"
+      - "data/eval/**"
+      - "tests/eval/**"
+  workflow_dispatch: {}
+
+jobs:
+  eval-full:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: src
+      PYTHONUTF8: "1"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install -r requirements-dev.txt
+
+      - name: P0 build and verify three eval layers
+        run: |
+          python -X utf8 -m medevirag.eval.layers build
+          python -X utf8 -m medevirag.eval.layers verify
+
+      - name: All eval unit tests
+        run: python -X utf8 -m pytest tests/eval -q
+
+      - name: P0 one-shot eval and regression gate
+        run: python -X utf8 scripts/eval/run_core.py --layer core_80
+
+      - name: P0 prove the gate blocks a degraded retrieval
+        run: python -X utf8 scripts/eval/degrade_probe.py
+
+      - name: P1 real rule judge and perturbation validation
+        run: python -X utf8 scripts/eval/run_p1.py
+
+      - name: P2 agent trajectory eval and ablation
+        run: python -X utf8 scripts/eval/run_p2.py
+
+      - name: P3 unified protocol, version gate and bad-case reflow
+        run: python -X utf8 scripts/eval/run_p3.py
+
+      - name: Machine-check all JSON/YAML deliverables
+        run: |
+          python -X utf8 -c "import json,yaml,pathlib; r=pathlib.Path('data/reports'); [json.loads(p.read_text(encoding='utf-8')) for p in r.glob('*.json')]; yaml.safe_load(pathlib.Path('.github/workflows/eval_full.yml').read_text(encoding='utf-8')); print('config parse OK')"
+
+      - name: Upload all eval evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: p0-p3-eval-reports
+          path: data/reports/

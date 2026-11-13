@@ -1,0 +1,19 @@
+==============================================================================
+S1 验收复核（chunks.jsonl: 4023 块 / 61 篇文档）
+==============================================================================
+[PASS] A1 section_path 非空率 >= 95% —— 非空 4023/4023 = 100.00%, 空 0 块
+[PASS] A2 表格/推荐切分截断数 = 0 —— 跨页 table/recommendation = 0 块
+[PASS] A3 200~400 token 块占比 >= 85% —— 3516 / 4023 = 87.40%
+[PASS] A4 token_len > 480 的块数 = 0 —— 超限 0 块, max=480
+[PASS] A5 context_header 缺失 = 0 —— 缺失 0 块, 格式异常 0 块
+[PASS] A6 evidence/rec 可得率如实输出 —— evidence_level 可得 27 (0.67%) 分布 {'unknown': 3996, 'A': 16, 'B': 9, 'C': 1, 'D': 1}, rec_strength 可得 26 (0.65%) 分布 {'unknown': 3997, 'I': 22, 'IIa': 4}
+[PASS] A7 单测 >= 21 且全绿 —— 75 passed in 2.68s (要求 >=21)
+[PASS] A8 ruff + mypy 全绿 —— ruff: All checks passed! | mypy: Success: no issues found in 58 source files
+[PASS] A9 端到端产物齐备（>=10 篇文档） —— 缺失 无 ; 文档数 61
+[PASS] A10 幂等（同篇两次 chunk_id 集合一致） —— doc_id=0108_135352_975 两次各 12 个 chunk_id, 集合一致
+[PASS] A11 语料/模型不入版本库（.gitignore 断言） —— .gitignore 已 含 data/ 排除；注：工作区非 git 仓库，故以 .gitignore 替代 git status 判定
+[PASS] L1 表格块 bbox 非零（可高亮回链） —— table 块 1156 个, 零/缺失 bbox 0 个
+[PASS] L2 locator.block_index 真实透传（纯表格块 >=10000 且取值不恒定） —— 纯表格块 975 个, 序号异常 0 个; 全量 block_index 取值 134 种
+[PASS] L3 全量 bbox 无退化（零面积/缺失 = 0） —— 退化 bbox 0 / 4023 块
+------------------------------------------------------------------------------
+结论：全部通过 (exit 0)

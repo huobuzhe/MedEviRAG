@@ -1,0 +1,50 @@
+[
+  {
+    "page": 3,
+    "block_index": 0,
+    "kind": "body",
+    "text": "3.2　诊室血压测量",
+    "bbox": [
+      72,
+      100,
+      300,
+      116
+    ],
+    "size": 16,
+    "font": "SimSun",
+    "bold": false,
+    "n_chars": 9
+  },
+  {
+    "page": 3,
+    "block_index": 1,
+    "kind": "body",
+    "text": "测量前受试者应坐位安静休息 5 min，测量时取坐位，裸露上臂，上臂与心脏处于同一水平。",
+    "bbox": [
+      72,
+      120,
+      500,
+      136
+    ],
+    "size": 12,
+    "font": "SimSun",
+    "bold": false,
+    "n_chars": 42
+  },
+  {
+    "page": 3,
+    "block_index": 10000,
+    "kind": "table",
+    "text": "| 分类 | 收缩压 |\n|---|---|\n| 正常血压 | ＜120 |",
+    "bbox": [
+      72,
+      150,
+      500,
+      220
+    ],
+    "size": 0,
+    "font": "",
+    "bold": false,
+    "n_chars": 26
+  }
+]

@@ -1,0 +1,345 @@
+{
+  "metrics": {
+    "n": 5,
+    "n_total": 5,
+    "judge_error_rate": 0.0,
+    "recall_at_10": 1.0,
+    "hit_at_10": 1.0,
+    "mrr": 1.0,
+    "ndcg_at_10": 0.971498644575023,
+    "faithfulness": 1.0,
+    "evidence_recall": 1.0,
+    "refusal_dim": 1.0,
+    "citation_landing_rate": 1.0,
+    "sentence_support_rate": 0.0,
+    "refusal_recall": null,
+    "over_refusal_rate": 1.0,
+    "refusal_reason_accuracy": 0.0,
+    "ece": 0.66672,
+    "partial_rate": 0.0,
+    "recall_at_10_ci95": [
+      1.0,
+      1.0
+    ],
+    "recall_at_10_pass": true,
+    "mrr_ci95": [
+      1.0,
+      1.0
+    ],
+    "mrr_pass": true,
+    "ndcg_at_10_ci95": [
+      1.0,
+      1.0
+    ],
+    "ndcg_at_10_pass": true,
+    "citation_landing_rate_pass": true,
+    "sentence_support_rate_pass": false,
+    "faithfulness_ci95": [
+      1.0,
+      1.0
+    ],
+    "faithfulness_pass": true,
+    "refusal_reason_accuracy_pass": false,
+    "over_refusal_rate_pass": false,
+    "run_id": "20261024T1150_nogit_b44d87fc7246_dev",
+    "git_sha": "nogit",
+    "config_hash": "b44d87fc7246",
+    "split": "dev",
+    "seed": 20240501,
+    "frozen_set_sha256": "8e2486f2ddbb79ba433aacb2f4f6d54b",
+    "llm_mode": "fake",
+    "judge_model": "qwen3.8-flash",
+    "tokens_used": 0,
+    "api_calls": 15
+  },
+  "cases": [
+    {
+      "case_id": "AF-A-001",
+      "case_type": "answerable",
+      "must_refuse": false,
+      "gold_chunk_ids": [
+        "1031_101832_436#h2#c55"
+      ],
+      "gold_refuse_kind": null,
+      "question": "国家基层高血压防治管理指南2025 版中，关于空腹服用，非肠溶阿司匹林建议饭后服用，以减少胃肠道反应。（2）血压控制不良可的要点是什么？",
+      "answer": "我检索到的证据不足以支撑一个可靠回答：最高相关证据的相关性偏低，候选之间也拉不开差距。与其给你一个听起来像答案的东西，不如直接说没有。\n建议：把问题拆得更具体（加上疾病名、人群、干预措施），或换用该领域的标准术语再问一次。\n以上内容仅供技术验证与学习参考，不构成诊疗建议；任何用药与治疗决定请咨询执业医师。",
+      "retrieved": [
+        "1031_101832_436#h2#c55",
+        "1031_101832_436#h2#c03",
+        "1031_101832_436#h2#c56",
+        "1031_101832_436#h2#c52",
+        "1031_101832_436#h2#c04",
+        "1031_101719_234#一、#c04",
+        "1031_101620_633#h5#c14",
+        "1031_100011_575#(一)#c132"
+      ],
+      "graded": {
+        "1031_101832_436#h2#c55": 2,
+        "1031_101832_436#h2#c03": 1,
+        "1031_101832_436#h2#c56": 1,
+        "1031_101832_436#h2#c52": 1,
+        "1031_101832_436#h2#c04": 1
+      },
+      "status": "refused",
+      "refusal_reason": "low_support",
+      "confidence": 0.8529,
+      "dangling_citation_count": 0,
+      "total_citation_count": 1,
+      "sentences": [
+        {
+          "text": "固定答案 key=86d2cd438282 [C1]",
+          "cited_chunk_ids": [
+            "1031_101832_436#h2#c55"
+          ],
+          "landing_ok": true,
+          "entailed": false
+        }
+      ],
+      "latency_ms": 7328.161500001443,
+      "judge": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "judge_error": false,
+      "correct": true,
+      "metric_flags": {
+        "recall_at_10": true,
+        "mrr": true,
+        "ndcg_at_10": true,
+        "faithfulness": true,
+        "refusal_recall": true
+      }
+    },
+    {
+      "case_id": "AF-A-002",
+      "case_type": "answerable",
+      "must_refuse": false,
+      "gold_chunk_ids": [
+        "1031_100011_575#(三)#c140"
+      ],
+      "gold_refuse_kind": null,
+      "question": "(三) 抗血小板治疗中，关于反应性［453］。荟萃分析发现，小剂量阿司匹林仅对 体重<70 kg 的患者的要点是什么？",
+      "answer": "我检索到的证据不足以支撑一个可靠回答：最高相关证据的相关性偏低，候选之间也拉不开差距。与其给你一个听起来像答案的东西，不如直接说没有。\n建议：把问题拆得更具体（加上疾病名、人群、干预措施），或换用该领域的标准术语再问一次。\n以上内容仅供技术验证与学习参考，不构成诊疗建议；任何用药与治疗决定请咨询执业医师。",
+      "retrieved": [
+        "1031_100011_575#(三)#c140",
+        "1031_100011_575#(三)#c139",
+        "1031_101832_436#h2#c52",
+        "0201_083620_622#h1463#c40",
+        "1031_095848_337#(二)#c23",
+        "0201_083620_622#h1463#c39",
+        "1031_101832_436#h2#c55",
+        "0621_144019_327#5.3#c117"
+      ],
+      "graded": {
+        "1031_100011_575#(三)#c140": 2,
+        "1031_100011_575#(三)#c139": 1
+      },
+      "status": "refused",
+      "refusal_reason": "low_support",
+      "confidence": 0.8135,
+      "dangling_citation_count": 0,
+      "total_citation_count": 1,
+      "sentences": [
+        {
+          "text": "固定答案 key=bb5c38f6bcad [C1]",
+          "cited_chunk_ids": [
+            "1031_100011_575#(三)#c140"
+          ],
+          "landing_ok": true,
+          "entailed": false
+        }
+      ],
+      "latency_ms": 564.0309000009438,
+      "judge": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "judge_error": false,
+      "correct": true,
+      "metric_flags": {
+        "recall_at_10": true,
+        "mrr": true,
+        "ndcg_at_10": true,
+        "faithfulness": true,
+        "refusal_recall": true
+      }
+    },
+    {
+      "case_id": "AF-A-003",
+      "case_type": "answerable",
+      "must_refuse": false,
+      "gold_chunk_ids": [
+        "0123_124320_105#7.2.3#c25"
+      ],
+      "gold_refuse_kind": null,
+      "question": "III 期(AIDS 期中，关于WS 293—2019 B. 应建立实验室内部质量控制制度。 B.的要点是什么？",
+      "answer": "我查了本地语料，没有找到能支撑这个问题的指南或文献原文。语料没覆盖不等于临床上没有答案，只说明我这套系统没有可引用的证据，因此我不给结论。\n建议：在中华医学会各专科分会指南库、或 UpToDate / DynaMed 检索该主题；若是罕见病，可考虑到罕见病诊疗协作网医院就诊。\n以上内容仅供技术验证与学习参考，不构成诊疗建议；任何用药与治疗决定请咨询执业医师。",
+      "retrieved": [
+        "0123_124320_105#7.2.3#c25",
+        "0123_124354_870#2.2.2#c131",
+        "0123_124320_105#h5#c03",
+        "0707_144543_167#7.3#c09",
+        "0123_124320_105#h5#c01",
+        "0123_124354_870#1.7.2#c127",
+        "0123_124320_105#7.2.3#c23",
+        "0123_124320_105#7.2.3#c15"
+      ],
+      "graded": {
+        "0123_124320_105#7.2.3#c25": 2,
+        "0123_124320_105#h5#c03": 1,
+        "0123_124320_105#h5#c01": 1,
+        "0123_124320_105#7.2.3#c23": 1,
+        "0123_124320_105#7.2.3#c15": 1
+      },
+      "status": "refused",
+      "refusal_reason": "uncovered_topic",
+      "confidence": 0.0,
+      "dangling_citation_count": 0,
+      "total_citation_count": 1,
+      "sentences": [
+        {
+          "text": "固定答案 key=7f7c7bce7726 [C1]",
+          "cited_chunk_ids": [
+            "0123_124320_105#7.2.3#c25"
+          ],
+          "landing_ok": true,
+          "entailed": false
+        }
+      ],
+      "latency_ms": 501.3123000098858,
+      "judge": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "judge_error": false,
+      "correct": true,
+      "metric_flags": {
+        "recall_at_10": true,
+        "mrr": true,
+        "ndcg_at_10": true,
+        "faithfulness": true,
+        "refusal_recall": true
+      }
+    },
+    {
+      "case_id": "AF-A-004",
+      "case_type": "answerable",
+      "must_refuse": false,
+      "gold_chunk_ids": [
+        "0123_130218_622#7.2#c08"
+      ],
+      "gold_refuse_kind": null,
+      "question": "软下疳中，关于A. 女性宫颈管取材：先用一拭子拭去宫颈表面黏液，再用另一拭子插入的要点是什么？",
+      "answer": "我查了本地语料，没有找到能支撑这个问题的指南或文献原文。语料没覆盖不等于临床上没有答案，只说明我这套系统没有可引用的证据，因此我不给结论。\n建议：在中华医学会各专科分会指南库、或 UpToDate / DynaMed 检索该主题；若是罕见病，可考虑到罕见病诊疗协作网医院就诊。\n以上内容仅供技术验证与学习参考，不构成诊疗建议；任何用药与治疗决定请咨询执业医师。",
+      "retrieved": [
+        "0123_130218_622#7.2#c08",
+        "0123_130133_511#7.4#c12",
+        "0123_130218_622#7.2#c07",
+        "0123_130133_511#7.1.1#c09",
+        "0123_130218_622#7.2#c17",
+        "0123_125349_591#5.3#c17",
+        "0123_125349_591#h30#c23",
+        "0727_162703_953#h236#c20"
+      ],
+      "graded": {
+        "0123_130218_622#7.2#c08": 2,
+        "0123_130218_622#7.2#c07": 1,
+        "0123_130218_622#7.2#c17": 1
+      },
+      "status": "refused",
+      "refusal_reason": "uncovered_topic",
+      "confidence": 0.0,
+      "dangling_citation_count": 0,
+      "total_citation_count": 1,
+      "sentences": [
+        {
+          "text": "固定答案 key=196be32344dd [C1]",
+          "cited_chunk_ids": [
+            "0123_130218_622#7.2#c08"
+          ],
+          "landing_ok": true,
+          "entailed": false
+        }
+      ],
+      "latency_ms": 517.0689999940805,
+      "judge": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "judge_error": false,
+      "correct": true,
+      "metric_flags": {
+        "recall_at_10": true,
+        "mrr": true,
+        "ndcg_at_10": true,
+        "faithfulness": true,
+        "refusal_recall": true
+      }
+    },
+    {
+      "case_id": "AF-A-005",
+      "case_type": "answerable",
+      "must_refuse": false,
+      "gold_chunk_ids": [
+        "0123_124354_870#3.2.1#c15"
+      ],
+      "gold_refuse_kind": null,
+      "question": "血液中，关于 应制定样本编码的标准操作程序（SOP），规定样本编码的原则和方法的要点是什么？",
+      "answer": "我查了本地语料，没有找到能支撑这个问题的指南或文献原文。语料没覆盖不等于临床上没有答案，只说明我这套系统没有可引用的证据，因此我不给结论。\n建议：在中华医学会各专科分会指南库、或 UpToDate / DynaMed 检索该主题；若是罕见病，可考虑到罕见病诊疗协作网医院就诊。\n以上内容仅供技术验证与学习参考，不构成诊疗建议；任何用药与治疗决定请咨询执业医师。",
+      "retrieved": [
+        "0123_124354_870#3.2.1#c15",
+        "0123_124354_870#第一章#c13",
+        "0123_124354_870#3.5#c20",
+        "0123_124354_870#3.3.1#c63",
+        "0123_124354_870#4.6#c95",
+        "0123_124354_870#h164#c122",
+        "0123_124354_870#4.1.1#c85",
+        "0123_124354_870#3.3.1#c65"
+      ],
+      "graded": {
+        "0123_124354_870#3.2.1#c15": 2,
+        "0123_124354_870#第一章#c13": 1,
+        "0123_124354_870#3.5#c20": 1,
+        "0123_124354_870#3.3.1#c63": 1,
+        "0123_124354_870#4.6#c95": 1,
+        "0123_124354_870#h164#c122": 1,
+        "0123_124354_870#4.1.1#c85": 1,
+        "0123_124354_870#3.3.1#c65": 1
+      },
+      "status": "refused",
+      "refusal_reason": "uncovered_topic",
+      "confidence": 0.0,
+      "dangling_citation_count": 0,
+      "total_citation_count": 1,
+      "sentences": [
+        {
+          "text": "固定答案 key=db7685614cfd [C1]",
+          "cited_chunk_ids": [
+            "0123_124354_870#3.2.1#c15"
+          ],
+          "landing_ok": true,
+          "entailed": false
+        }
+      ],
+      "latency_ms": 446.4923000050476,
+      "judge": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "judge_error": false,
+      "correct": true,
+      "metric_flags": {
+        "recall_at_10": true,
+        "mrr": true,
+        "ndcg_at_10": true,
+        "faithfulness": true,
+        "refusal_recall": true
+      }
+    }
+  ]
+}

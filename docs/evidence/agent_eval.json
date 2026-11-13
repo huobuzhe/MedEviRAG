@@ -1,0 +1,483 @@
+{
+  "generated_at": "2026-11-12T11:25:24+00:00",
+  "n_tasks": 40,
+  "configs": {
+    "full": {},
+    "no_loop_detection": {
+      "loop_detection": false
+    },
+    "no_budget_control": {
+      "budget_control": false
+    },
+    "no_hitl": {
+      "hitl": false
+    },
+    "no_error_recovery": {
+      "error_recovery": false
+    },
+    "bare": {
+      "loop_detection": false,
+      "budget_control": false,
+      "hitl": false,
+      "error_recovery": false
+    }
+  },
+  "metrics_by_config": {
+    "full": {
+      "n_tasks": 40,
+      "task_success_rate": 1.0,
+      "tool_selection_accuracy": 1.0,
+      "param_accuracy": 0.8571,
+      "total_tool_calls": 70,
+      "avg_steps": 2.12,
+      "p95_steps": 4,
+      "total_tokens": 7450,
+      "estimated_cost_yuan": 0.00745,
+      "loop_detection_rate": 1.0,
+      "error_recovery_rate": 1.0,
+      "hitl_trigger_accuracy": 1.0,
+      "by_kind": {
+        "single_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 130.0
+        },
+        "multi_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 3.0,
+          "mean_tokens": 240.0
+        },
+        "param_error": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 2.0,
+          "mean_tokens": 140.0
+        },
+        "tool_failure": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 2.0,
+          "mean_tokens": 220.0
+        },
+        "loop_risk": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 130.0
+        },
+        "hitl_required": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 110.0
+        },
+        "budget_risk": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 520.0
+        },
+        "out_of_scope": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 0.0,
+          "mean_tokens": 0.0
+        }
+      },
+      "criteria": "风险类任务的成功 = 对应机制正确处置（拦住/恢复/审批）；普通任务 = 工具命中且无未处理参数错误"
+    },
+    "no_loop_detection": {
+      "n_tasks": 40,
+      "task_success_rate": 0.875,
+      "tool_selection_accuracy": 1.0,
+      "param_accuracy": 0.8824,
+      "total_tool_calls": 85,
+      "avg_steps": 2.12,
+      "p95_steps": 4,
+      "total_tokens": 9400,
+      "estimated_cost_yuan": 0.0094,
+      "loop_detection_rate": 0.0,
+      "error_recovery_rate": 1.0,
+      "hitl_trigger_accuracy": 1.0,
+      "by_kind": {
+        "single_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 130.0
+        },
+        "multi_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 3.0,
+          "mean_tokens": 240.0
+        },
+        "param_error": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 2.0,
+          "mean_tokens": 140.0
+        },
+        "tool_failure": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 2.0,
+          "mean_tokens": 220.0
+        },
+        "loop_risk": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 520.0
+        },
+        "hitl_required": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 110.0
+        },
+        "budget_risk": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 520.0
+        },
+        "out_of_scope": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 0.0,
+          "mean_tokens": 0.0
+        }
+      },
+      "criteria": "风险类任务的成功 = 对应机制正确处置（拦住/恢复/审批）；普通任务 = 工具命中且无未处理参数错误"
+    },
+    "no_budget_control": {
+      "n_tasks": 40,
+      "task_success_rate": 0.875,
+      "tool_selection_accuracy": 1.0,
+      "param_accuracy": 0.875,
+      "total_tool_calls": 80,
+      "avg_steps": 2.38,
+      "p95_steps": 6,
+      "total_tokens": 8750,
+      "estimated_cost_yuan": 0.00875,
+      "loop_detection_rate": 1.0,
+      "error_recovery_rate": 1.0,
+      "hitl_trigger_accuracy": 1.0,
+      "by_kind": {
+        "single_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 130.0
+        },
+        "multi_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 3.0,
+          "mean_tokens": 240.0
+        },
+        "param_error": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 2.0,
+          "mean_tokens": 140.0
+        },
+        "tool_failure": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 2.0,
+          "mean_tokens": 220.0
+        },
+        "loop_risk": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 130.0
+        },
+        "hitl_required": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 110.0
+        },
+        "budget_risk": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 6.0,
+          "mean_tokens": 780.0
+        },
+        "out_of_scope": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 0.0,
+          "mean_tokens": 0.0
+        }
+      },
+      "criteria": "风险类任务的成功 = 对应机制正确处置（拦住/恢复/审批）；普通任务 = 工具命中且无未处理参数错误"
+    },
+    "no_hitl": {
+      "n_tasks": 40,
+      "task_success_rate": 0.875,
+      "tool_selection_accuracy": 1.0,
+      "param_accuracy": 0.8571,
+      "total_tool_calls": 70,
+      "avg_steps": 2.12,
+      "p95_steps": 4,
+      "total_tokens": 7450,
+      "estimated_cost_yuan": 0.00745,
+      "loop_detection_rate": 1.0,
+      "error_recovery_rate": 1.0,
+      "hitl_trigger_accuracy": 0.75,
+      "by_kind": {
+        "single_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 130.0
+        },
+        "multi_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 3.0,
+          "mean_tokens": 240.0
+        },
+        "param_error": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 2.0,
+          "mean_tokens": 140.0
+        },
+        "tool_failure": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 2.0,
+          "mean_tokens": 220.0
+        },
+        "loop_risk": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 130.0
+        },
+        "hitl_required": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 110.0
+        },
+        "budget_risk": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 520.0
+        },
+        "out_of_scope": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 0.0,
+          "mean_tokens": 0.0
+        }
+      },
+      "criteria": "风险类任务的成功 = 对应机制正确处置（拦住/恢复/审批）；普通任务 = 工具命中且无未处理参数错误"
+    },
+    "no_error_recovery": {
+      "n_tasks": 40,
+      "task_success_rate": 0.75,
+      "tool_selection_accuracy": 1.0,
+      "param_accuracy": 0.8333,
+      "total_tool_calls": 60,
+      "avg_steps": 1.88,
+      "p95_steps": 4,
+      "total_tokens": 6550,
+      "estimated_cost_yuan": 0.00655,
+      "loop_detection_rate": 1.0,
+      "error_recovery_rate": 0.0,
+      "hitl_trigger_accuracy": 1.0,
+      "by_kind": {
+        "single_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 130.0
+        },
+        "multi_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 3.0,
+          "mean_tokens": 240.0
+        },
+        "param_error": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 70.0
+        },
+        "tool_failure": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 110.0
+        },
+        "loop_risk": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 130.0
+        },
+        "hitl_required": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 110.0
+        },
+        "budget_risk": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 520.0
+        },
+        "out_of_scope": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 0.0,
+          "mean_tokens": 0.0
+        }
+      },
+      "criteria": "风险类任务的成功 = 对应机制正确处置（拦住/恢复/审批）；普通任务 = 工具命中且无未处理参数错误"
+    },
+    "bare": {
+      "n_tasks": 40,
+      "task_success_rate": 0.375,
+      "tool_selection_accuracy": 1.0,
+      "param_accuracy": 0.8824,
+      "total_tool_calls": 85,
+      "avg_steps": 2.12,
+      "p95_steps": 6,
+      "total_tokens": 9800,
+      "estimated_cost_yuan": 0.0098,
+      "loop_detection_rate": 0.0,
+      "error_recovery_rate": 0.0,
+      "hitl_trigger_accuracy": 0.75,
+      "by_kind": {
+        "single_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 130.0
+        },
+        "multi_tool": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 3.0,
+          "mean_tokens": 240.0
+        },
+        "param_error": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 70.0
+        },
+        "tool_failure": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 110.0
+        },
+        "loop_risk": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 4.0,
+          "mean_tokens": 520.0
+        },
+        "hitl_required": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 1.0,
+          "mean_tokens": 110.0
+        },
+        "budget_risk": {
+          "n": 5,
+          "handled": 0.0,
+          "mean_steps": 6.0,
+          "mean_tokens": 780.0
+        },
+        "out_of_scope": {
+          "n": 5,
+          "handled": 1.0,
+          "mean_steps": 0.0,
+          "mean_tokens": 0.0
+        }
+      },
+      "criteria": "风险类任务的成功 = 对应机制正确处置（拦住/恢复/审批）；普通任务 = 工具命中且无未处理参数错误"
+    }
+  },
+  "full_config": {
+    "n_tasks": 40,
+    "task_success_rate": 1.0,
+    "tool_selection_accuracy": 1.0,
+    "param_accuracy": 0.8571,
+    "total_tool_calls": 70,
+    "avg_steps": 2.12,
+    "p95_steps": 4,
+    "total_tokens": 7450,
+    "estimated_cost_yuan": 0.00745,
+    "loop_detection_rate": 1.0,
+    "error_recovery_rate": 1.0,
+    "hitl_trigger_accuracy": 1.0,
+    "by_kind": {
+      "single_tool": {
+        "n": 5,
+        "handled": 1.0,
+        "mean_steps": 1.0,
+        "mean_tokens": 130.0
+      },
+      "multi_tool": {
+        "n": 5,
+        "handled": 1.0,
+        "mean_steps": 3.0,
+        "mean_tokens": 240.0
+      },
+      "param_error": {
+        "n": 5,
+        "handled": 1.0,
+        "mean_steps": 2.0,
+        "mean_tokens": 140.0
+      },
+      "tool_failure": {
+        "n": 5,
+        "handled": 1.0,
+        "mean_steps": 2.0,
+        "mean_tokens": 220.0
+      },
+      "loop_risk": {
+        "n": 5,
+        "handled": 1.0,
+        "mean_steps": 4.0,
+        "mean_tokens": 130.0
+      },
+      "hitl_required": {
+        "n": 5,
+        "handled": 1.0,
+        "mean_steps": 1.0,
+        "mean_tokens": 110.0
+      },
+      "budget_risk": {
+        "n": 5,
+        "handled": 1.0,
+        "mean_steps": 4.0,
+        "mean_tokens": 520.0
+      },
+      "out_of_scope": {
+        "n": 5,
+        "handled": 1.0,
+        "mean_steps": 0.0,
+        "mean_tokens": 0.0
+      }
+    },
+    "criteria": "风险类任务的成功 = 对应机制正确处置（拦住/恢复/审批）；普通任务 = 工具命中且无未处理参数错误"
+  },
+  "note": "确定性脚本规划器（ScriptedPlanner）产出动作序列，用来量化评测与防护机制，不是模型能力评估；接真实 LLM 时替换 plan() 即可复用全部指标与门禁。"
+}

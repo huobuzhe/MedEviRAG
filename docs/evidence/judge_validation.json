@@ -1,0 +1,888 @@
+{
+  "generated_at": "2026-11-12T11:25:23+00:00",
+  "method": "已知扰动检验（metamorphic testing）；标签来自客观缺陷注入，不是人评，也不是 AI 代标",
+  "judge": "RuleJudgeLLM（确定性规则判分器，非真实 LLM）",
+  "repeats_per_kind": 6,
+  "n_pairs": 42,
+  "direction_agreement": 1.0,
+  "direction_hits": 24,
+  "direction_total": 24,
+  "invariance_agreement": 1.0,
+  "invariance_hits": 18,
+  "invariance_total": 18,
+  "veto_catch_rate": 1.0,
+  "veto_hits": 12,
+  "veto_total": 12,
+  "judge_error_rate": 0.0,
+  "bias_gap": {
+    "length": 0.0,
+    "position": 0.0,
+    "format": 0.0
+  },
+  "by_kind": {
+    "numeric_corrupt": {
+      "n": 6,
+      "mean_delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    "wrong_refusal": {
+      "n": 6,
+      "mean_delta": {
+        "faithfulness": 0.0909,
+        "evidence_recall": 0.0,
+        "refusal": -1.0
+      }
+    },
+    "evidence_drop": {
+      "n": 6,
+      "mean_delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": -0.375,
+        "refusal": 0.0
+      }
+    },
+    "citation_dangling": {
+      "n": 6,
+      "mean_delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    "length_padding": {
+      "n": 6,
+      "mean_delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    "evidence_reorder": {
+      "n": 6,
+      "mean_delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    "format_markdown": {
+      "n": 6,
+      "mean_delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    }
+  },
+  "known_llm_judge_biases": [
+    "位置偏差",
+    "长度偏差",
+    "自我偏好",
+    "格式偏差",
+    "权威偏差"
+  ],
+  "note": "RuleJudge 天然免疫位置/长度/格式偏差，但不能替代真实 LLM judge 做语义蕴含判断；真实 judge 的偏差缓解靠 judges.py 的 shuffle_evidence + prompt 档位描述 + 跨族断言。",
+  "rows": [
+    {
+      "kind": "numeric_corrupt",
+      "repeat": 0,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "numeric_corrupt",
+      "repeat": 1,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "numeric_corrupt",
+      "repeat": 2,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "numeric_corrupt",
+      "repeat": 3,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "numeric_corrupt",
+      "repeat": 4,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "numeric_corrupt",
+      "repeat": 5,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "wrong_refusal",
+      "repeat": 0,
+      "base": {
+        "faithfulness": 0.9090909090909091,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 0.0
+      },
+      "delta": {
+        "faithfulness": 0.0909,
+        "evidence_recall": 0.0,
+        "refusal": -1.0
+      }
+    },
+    {
+      "kind": "wrong_refusal",
+      "repeat": 1,
+      "base": {
+        "faithfulness": 0.9090909090909091,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 0.0
+      },
+      "delta": {
+        "faithfulness": 0.0909,
+        "evidence_recall": 0.0,
+        "refusal": -1.0
+      }
+    },
+    {
+      "kind": "wrong_refusal",
+      "repeat": 2,
+      "base": {
+        "faithfulness": 0.9090909090909091,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 0.0
+      },
+      "delta": {
+        "faithfulness": 0.0909,
+        "evidence_recall": 0.0,
+        "refusal": -1.0
+      }
+    },
+    {
+      "kind": "wrong_refusal",
+      "repeat": 3,
+      "base": {
+        "faithfulness": 0.9090909090909091,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 0.0
+      },
+      "delta": {
+        "faithfulness": 0.0909,
+        "evidence_recall": 0.0,
+        "refusal": -1.0
+      }
+    },
+    {
+      "kind": "wrong_refusal",
+      "repeat": 4,
+      "base": {
+        "faithfulness": 0.9090909090909091,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 0.0
+      },
+      "delta": {
+        "faithfulness": 0.0909,
+        "evidence_recall": 0.0,
+        "refusal": -1.0
+      }
+    },
+    {
+      "kind": "wrong_refusal",
+      "repeat": 5,
+      "base": {
+        "faithfulness": 0.9090909090909091,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 0.0
+      },
+      "delta": {
+        "faithfulness": 0.0909,
+        "evidence_recall": 0.0,
+        "refusal": -1.0
+      }
+    },
+    {
+      "kind": "evidence_drop",
+      "repeat": 0,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.625,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": -0.375,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_drop",
+      "repeat": 1,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.625,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": -0.375,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_drop",
+      "repeat": 2,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.625,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": -0.375,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_drop",
+      "repeat": 3,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.625,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": -0.375,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_drop",
+      "repeat": 4,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.625,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": -0.375,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_drop",
+      "repeat": 5,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.625,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": -0.375,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "citation_dangling",
+      "repeat": 0,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "citation_dangling",
+      "repeat": 1,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "citation_dangling",
+      "repeat": 2,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "citation_dangling",
+      "repeat": 3,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "citation_dangling",
+      "repeat": 4,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "citation_dangling",
+      "repeat": 5,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 0.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": -1.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "length_padding",
+      "repeat": 0,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "length_padding",
+      "repeat": 1,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "length_padding",
+      "repeat": 2,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "length_padding",
+      "repeat": 3,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "length_padding",
+      "repeat": 4,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "length_padding",
+      "repeat": 5,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_reorder",
+      "repeat": 0,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_reorder",
+      "repeat": 1,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_reorder",
+      "repeat": 2,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_reorder",
+      "repeat": 3,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_reorder",
+      "repeat": 4,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "evidence_reorder",
+      "repeat": 5,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "format_markdown",
+      "repeat": 0,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "format_markdown",
+      "repeat": 1,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "format_markdown",
+      "repeat": 2,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "format_markdown",
+      "repeat": 3,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "format_markdown",
+      "repeat": 4,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    },
+    {
+      "kind": "format_markdown",
+      "repeat": 5,
+      "base": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "perturbed": {
+        "faithfulness": 1.0,
+        "evidence_recall": 1.0,
+        "refusal": 1.0
+      },
+      "delta": {
+        "faithfulness": 0.0,
+        "evidence_recall": 0.0,
+        "refusal": 0.0
+      }
+    }
+  ]
+}

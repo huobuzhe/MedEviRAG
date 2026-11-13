@@ -1,0 +1,93 @@
+# 评测与 CI（语义在 S5 生效）
+judge:
+  provider: dashscope
+  model: qwen3.8-flash         # 必须与 generator 不同族
+split:
+  dev_ratio: 0.8
+  seed: 20240601
+thresholds:
+  recall_at_10: 0.85
+  mrr: 0.62
+  ndcg_at_10: 0.70
+  citation_grounding: 0.90
+  sentence_support: 0.85
+  faithfulness: 0.80
+  refusal_recall: 0.85
+  over_refusal: 0.12
+  refusal_reason_acc: 0.80
+  p95_latency_s: 6.0
+
+# S4 置信度综合评分（docs/05 §T1/T2）
+confidence:
+  weights:
+    rank: 0.35
+    citation: 0.30
+    evidence: 0.20
+    margin: 0.15
+  platt:
+    # rerank logit 口径（S3 已否决重排，保留供开关回拨时自动切换）
+    rank:
+      mid: 2.0
+      scale: 1.5
+    margin:
+      mid: 1.0
+      scale: 1.2
+    # dense 余弦口径（偏差 D1；dev60 网格标定，logloss 0.5029/0.5138）
+    rank_dense:
+      mid: 0.670
+      scale: 0.060
+    margin_dense:
+      mid: 0.1385
+      scale: 0.1693
+  thresholds:
+    answered: 0.65
+    partial: 0.45
+
+# S4 安全拒答规则阈值（docs/05 §T1/T3-T5）
+refusal:
+  now_year: 2025
+  stale_window_years: 10
+  stale_top1_year: 2015
+  low_top1_score: 0.35
+  small_margin_raw: 0.05
+  max_grounding_fail_rate: 0.30
+  min_sentence_support: 0.50
+  unknown_ratio_trigger: 0.60
+  unknown_level_ratio: 1.00
+  unknown_level_conf_cap: 0.55
+
+
+# S5 评测闭环（docs/06 §T1）：00 §9 阈值只写这一处，代码不许硬编码
+eval:
+  set_path: data/eval/eval_set.jsonl
+  freeze_path: data/eval/freeze.json
+  reports_dir: data/reports
+  sample_seed: 20240501
+  split: { dev_ratio: 0.8, test_ratio: 0.2 }
+  judge:
+    provider: dashscope
+    model: qwen3.8-flash         # 与生成模型不同族：DeepSeek 生成 / Qwen 判分
+    temperature: 0.0
+    max_tokens: 512
+    evidence_order_seed: 7
+    max_retry: 2
+    min_agree_kappa: 0.60
+  generator:
+    provider: siliconflow
+    model: deepseek-ai/DeepSeek-V4.1-Flash
+    temperature: 0.0
+  thresholds:
+    recall_at_10: 0.85
+    mrr: 0.62
+    ndcg_at_10: 0.70
+    citation_landing_rate: 0.90
+    sentence_support_rate: 0.85
+    faithfulness: 0.80
+    refusal_recall: 0.85
+    over_refusal_rate: 0.12      # 上限型：越低越好
+    refusal_reason_accuracy: 0.80
+    judge_error_rate: 0.05       # 解析失败率上限，超过则本次 run 作废
+    ece: 0.10                    # 观测项，不设硬门禁
+  regression:
+    max_drop: 0.02               # 噪声带：视为噪声不报警
+    hard_drop: 0.05              # 超过即非零退出

@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-10-25T00:11:14+08:00",
+  "status": "skipped",
+  "reason": "no Milvus server reachable: MILVUS_SERVER_URI is unset, no pre-existing server on 127.0.0.1:19530, and the docker daemon is down. docker info stderr: failed to connect to the docker API at npipe:////./pipe/dockerDesktopLinuxEngine; check if the path is correct and if the daemon is running: open //./pipe/dockerDesktopLinuxEngine: The system cannot find the file specified.",
+  "lite_uri": "./data/indexes/milvus_lite.db",
+  "server_uri": null,
+  "n_queries": 10,
+  "min_overlap": 9,
+  "ok_queries": 0,
+  "detail": []
+}

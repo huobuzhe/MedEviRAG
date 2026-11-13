@@ -1,0 +1,774 @@
+{
+ "src/medevirag/rag/refusal_templates.py": [
+  {
+   "line": 14,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 24,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 34,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 45,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 57,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 67,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 78,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 89,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 99,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 134,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/rag/context.py": [
+  {
+   "line": 25,
+   "msg": "Missing type parameters for generic type \"list\"  [type-arg]"
+  },
+  {
+   "line": 28,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 35,
+   "msg": "Missing type parameters for generic type \"list\"  [type-arg]"
+  },
+  {
+   "line": 35,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/rag/confidence.py": [
+  {
+   "line": 121,
+   "msg": "Missing type parameters for generic type \"Sequence\"  [type-arg]"
+  },
+  {
+   "line": 137,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  }
+ ],
+ "src/medevirag/eval/report.py": [
+  {
+   "line": 6,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 77,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/common/types.py": [
+  {
+   "line": 63,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 82,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 229,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 242,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/serve/cache.py": [
+  {
+   "line": 22,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 35,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 75,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 83,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 89,
+   "msg": "Returning Any from function declared to return \"dict[Any, Any] | None\"  [no-any-return]"
+  },
+  {
+   "line": 91,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 99,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 107,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  }
+ ],
+ "src/medevirag/rag/refusal_rules.py": [
+  {
+   "line": 26,
+   "msg": "Missing type parameters for generic type \"Sequence\"  [type-arg]"
+  },
+  {
+   "line": 269,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 276,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 283,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 289,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 298,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 310,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 320,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 367,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 375,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 383,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 391,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 410,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 435,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 444,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 452,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 464,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 477,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 490,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 506,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/rag/citations.py": [
+  {
+   "line": 31,
+   "msg": "Missing type parameters for generic type \"list\"  [type-arg]"
+  },
+  {
+   "line": 33,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 55,
+   "msg": "Missing type parameters for generic type \"Mapping\"  [type-arg]"
+  },
+  {
+   "line": 62,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 88,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 90,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 100,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 134,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/rag/verifier.py": [
+  {
+   "line": 63,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 77,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 95,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/eval/metrics.py": [
+  {
+   "line": 40,
+   "msg": "Returning Any from function declared to return \"float\"  [no-any-return]"
+  },
+  {
+   "line": 49,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 57,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 64,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 71,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 142,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 142,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 145,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/eval/judges.py": [
+  {
+   "line": 44,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 51,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 52,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 85,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 87,
+   "msg": "Returning Any from function declared to return \"dict[Any, Any]\"  [no-any-return]"
+  },
+  {
+   "line": 90,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 90,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/eval/build_set.py": [
+  {
+   "line": 37,
+   "msg": "Returning Any from function declared to return \"dict[str, list[str]]\"  [no-any-return]"
+  },
+  {
+   "line": 40,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 43,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 55,
+   "msg": "Argument 1 to \"get\" of \"dict\" has incompatible type \"Any | None\"; expected \"str\"  [arg-type]"
+  },
+  {
+   "line": 60,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 61,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 101,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 195,
+   "msg": "Missing type parameters for generic type \"Counter\"  [type-arg]"
+  },
+  {
+   "line": 355,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 370,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/serve/schemas.py": [
+  {
+   "line": 79,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/serve/concurrency.py": [
+  {
+   "line": 26,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 31,
+   "msg": "Missing type parameters for generic type \"Future\"  [type-arg]"
+  },
+  {
+   "line": 31,
+   "msg": "Missing type parameters for generic type \"list\"  [type-arg]"
+  },
+  {
+   "line": 32,
+   "msg": "Missing type parameters for generic type \"Task\"  [type-arg]"
+  },
+  {
+   "line": 34,
+   "msg": "Missing type parameters for generic type \"list\"  [type-arg]"
+  },
+  {
+   "line": 36,
+   "msg": "Missing type parameters for generic type \"Future\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/serve/audit.py": [
+  {
+   "line": 32,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 65,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 79,
+   "msg": "Missing type parameters for generic type \"Task\"  [type-arg]"
+  },
+  {
+   "line": 82,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  }
+ ],
+ "src/medevirag/rag/refusal.py": [
+  {
+   "line": 35,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 65,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 77,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/eval/regression.py": [
+  {
+   "line": 18,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 21,
+   "msg": "Returning Any from function declared to return \"dict[Any, Any]\"  [no-any-return]"
+  },
+  {
+   "line": 24,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 36,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 36,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "tests/fixtures/builders.py": [
+  {
+   "line": 21,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 26,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 46,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 66,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 79,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 88,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 117,
+   "msg": "Item \"None\" of \"RuleHit | None\" has no attribute \"reason\"  [union-attr]"
+  },
+  {
+   "line": 118,
+   "msg": "Item \"None\" of \"RuleHit | None\" has no attribute \"rule_id\"  [union-attr]"
+  }
+ ],
+ "src/medevirag/rag/reranker.py": [
+  {
+   "line": 45,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 94,
+   "msg": "Missing type parameters for generic type \"list\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/rag/nodes.py": [
+  {
+   "line": 28,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 29,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 30,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 31,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 39,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 47,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 48,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 57,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 60,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 77,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 103,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 112,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 121,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 133,
+   "msg": "Function is missing a type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 140,
+   "msg": "\"_Adapter\" has no attribute \"_fake\"  [attr-defined]"
+  },
+  {
+   "line": 144,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 154,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 170,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 192,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 233,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 239,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 244,
+   "msg": "Call to untyped function \"get_retriever\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 251,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 254,
+   "msg": "Argument 1 to \"apply_hard_filters\" has incompatible type \"list[dict[Any, Any]]\"; expected \"list[RetrievedChunk]\"  [arg-type]"
+  },
+  {
+   "line": 257,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 267,
+   "msg": "Call to untyped function \"get_reranker\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 272,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 281,
+   "msg": "Call to untyped function \"get_llm\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 297,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 303,
+   "msg": "Call to untyped function \"get_judge\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 318,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 339,
+   "msg": "Argument \"citation\" to \"AskContext\" has incompatible type \"object\"; expected \"CitationReport\"  [arg-type]"
+  },
+  {
+   "line": 357,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/rag/graph.py": [
+  {
+   "line": 47,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 76,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 79,
+   "msg": "Call to untyped function \"build_graph\" in typed context  [no-untyped-call]"
+  }
+ ],
+ "src/medevirag/cli.py": [
+  {
+   "line": 364,
+   "msg": "Call to untyped function \"get_llm\" in typed context  [no-untyped-call]"
+  }
+ ],
+ "src/medevirag/serve/routes.py": [
+  {
+   "line": 28,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 42,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 55,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 59,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 64,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 68,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 70,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 76,
+   "msg": "Call to untyped function \"_pg\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 76,
+   "msg": "Call to untyped function \"_redis\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 76,
+   "msg": "Call to untyped function \"_milvus\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 77,
+   "msg": "Call to untyped function \"_models\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 88,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 201,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/serve/deps.py": [
+  {
+   "line": 56,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 74,
+   "msg": "Call to untyped function \"build_graph\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 86,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 94,
+   "msg": "Call to untyped function \"from_url\" in typed context  [no-untyped-call]"
+  },
+  {
+   "line": 122,
+   "msg": "Returning Any from function declared to return \"AppDeps\"  [no-any-return]"
+  }
+ ],
+ "src/medevirag/eval/runner.py": [
+  {
+   "line": 63,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 63,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  },
+  {
+   "line": 116,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 117,
+   "msg": "Missing type parameters for generic type \"dict\"  [type-arg]"
+  }
+ ],
+ "src/medevirag/serve/app.py": [
+  {
+   "line": 31,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 31,
+   "msg": "Function is missing a type annotation for one or more arguments  [no-untyped-def]"
+  },
+  {
+   "line": 41,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 48,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  },
+  {
+   "line": 49,
+   "msg": "Need type annotation for \"detail\" (hint: \"detail: dict[<type>, <type>] = ...\")  [var-annotated]"
+  },
+  {
+   "line": 56,
+   "msg": "Function is missing a return type annotation  [no-untyped-def]"
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+# S6 T7：全栈编排（docs/07 §T7）。
+# 启动顺序由 healthcheck 决定（depends_on condition: service_healthy）。
+# 本机无 Docker daemon：文件为交付物，部署机执行 docker compose up -d。
+
+services:
+  etcd:
+    image: quay.io/coreos/etcd:v3.5.5
+    environment:
+      - ETCD_AUTO_COMPACTION_MODE=revision
+      - ETCD_AUTO_COMPACTION_RETENTION=1000
+      - ETCD_QUOTA_BACKEND_BYTES=4294967296
+    command: etcd -advertise-client-urls=http://etcd:2379 -listen-client-urls http://0.0.0.0:2379 --data-dir /etcd
+    volumes: [etcd_data:/etcd]
+    healthcheck:
+      test: ["CMD", "etcdctl", "endpoint", "health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  minio:
+    image: minio/minio:RELEASE.2023-03-20T20-16-18Z
+    environment:
+      MINIO_ACCESS_KEY: minioadmin
+      MINIO_SECRET_KEY: minioadmin
+    command: minio server /minio_data --console-address ":9001"
+    volumes: [minio_data:/minio_data]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9000/minio/health/live"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  milvus:
+    image: milvusdb/milvus:v2.4.4
+    command: ["milvus", "run", "standalone"]
+    environment:
+      ETCD_ENDPOINTS: etcd:2379
+      MINIO_ADDRESS: minio:9000
+    volumes: [milvus_data:/var/lib/milvus]
+    ports: ["19530:19530", "9091:9091"]
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:9091/healthz"]
+      interval: 15s
+      timeout: 10s
+      retries: 20
+      start_period: 60s
+    depends_on:
+      etcd: {condition: service_healthy}
+      minio: {condition: service_healthy}
+
+  postgres:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: medevirag
+      POSTGRES_PASSWORD: medevirag
+      POSTGRES_DB: medevirag
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./pg/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports: ["5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U medevirag -d medevirag"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--maxmemory", "512mb", "--maxmemory-policy", "allkeys-lru"]
+    volumes: [redis_data:/data]
+    ports: ["6379:6379"]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  api:
+    build: {context: .., dockerfile: docker/Dockerfile}
+    env_file: [../.env]
+    environment:
+      MILVUS_URI: http://milvus:19530
+      PG_DSN: postgresql://medevirag:medevirag@postgres:5432/medevirag
+      REDIS_URL: redis://redis:6379/0
+      HF_HOME: /models/hf
+    volumes:
+      - ../models:/models:ro
+      - ../data:/app/data
+    ports: ["8000:8000"]
+    command: ["uvicorn", "medevirag.serve.app:app", "--host", "0.0.0.0", "--port", "8000", "--workers", "1"]
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request,sys; sys.exit(0 if urllib.request.urlopen('http://localhost:8000/readyz',timeout=3).status==200 else 1)"]
+      interval: 15s
+      timeout: 5s
+      retries: 20
+      start_period: 120s
+    depends_on:
+      milvus: {condition: service_healthy}
+      postgres: {condition: service_healthy}
+      redis: {condition: service_healthy}
+    restart: unless-stopped
+
+volumes: {etcd_data: {}, minio_data: {}, milvus_data: {}, pg_data: {}, redis_data: {}}
+networks: {default: {name: medevirag_net}}

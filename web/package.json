@@ -1,0 +1,8 @@
+{
+  "name": "medevirag-web",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": { "dev": "vite", "build": "vite build" },
+  "devDependencies": { "vite": "^5.4.0", "typescript": "^5.5.0" }
+}

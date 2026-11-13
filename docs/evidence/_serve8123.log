@@ -1,0 +1,35 @@
+INFO:     Started server process [25404]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8123 (Press CTRL+C to quit)
+INFO:     127.0.0.1:64912 - "GET /healthz HTTP/1.1" 200 OK
+F:\MedEviRAG\.venv\lib\site-packages\transformers\utils\hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Building prefix dict from the default dictionary ...
+Loading model from cache F:\MedEviRAG\jieba.cache
+Loading model cost 0.374 seconds.
+Prefix dict has been built successfully.
+INFO:     127.0.0.1:64917 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64926 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64928 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64949 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64950 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64951 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64952 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64953 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64955 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64957 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64967 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64960 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64965 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64954 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64963 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64956 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64958 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64968 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64959 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64961 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64966 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64964 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64962 - "POST /v1/ask HTTP/1.1" 200 OK
+INFO:     127.0.0.1:65143 - "GET /healthz HTTP/1.1" 200 OK

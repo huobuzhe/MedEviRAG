@@ -1,0 +1,10 @@
+.venv
+.git
+data
+models
+docs
+tests
+*.pyc
+__pycache__
+.env
+jieba.cache

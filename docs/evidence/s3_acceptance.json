@@ -1,0 +1,91 @@
+{
+  "results": [
+    {
+      "id": "A1",
+      "name": "重排器确定性",
+      "status": "PASS",
+      "evidence": "5 passed, 1 warning in 8.99s"
+    },
+    {
+      "id": "A2",
+      "name": "重排延迟不超预算",
+      "status": "PASS",
+      "evidence": "K=20 P95=229.7ms (≤300), K=50 P95=555.0ms (≤800)"
+    },
+    {
+      "id": "A3",
+      "name": "重排净收益（不足则 R2 否决并留档）",
+      "status": "PASS",
+      "evidence": "ΔMRR=0.0557<0.10 → R2 否决重排；retrieval.yaml rerank.enabled=False (应为 False)；直通 Top8 已生效"
+    },
+    {
+      "id": "A4",
+      "name": "候选档位决策有数据支撑",
+      "status": "PASS",
+      "evidence": "三档齐全=True, 选定K=20, 报告含结论理由=True"
+    },
+    {
+      "id": "A5",
+      "name": "引用落点正确率",
+      "status": "SKIP",
+      "evidence": "离线桩 landing=1.0（链路已跑通）；真实模型合规率须 --real 才能作门禁，本机无 API key"
+    },
+    {
+      "id": "A6",
+      "name": "句级支撑率",
+      "status": "SKIP",
+      "evidence": "离线桩 support=1.0（链路已跑通）；真实句级支撑率须 --real 才能作门禁"
+    },
+    {
+      "id": "A7",
+      "name": "verifier 拦得住注入的非法 citation",
+      "status": "PASS",
+      "evidence": "[C9] 注入被拦: 1 passed, 6 deselected, 1 warning in 6.89s"
+    },
+    {
+      "id": "A8",
+      "name": "重试有硬上限",
+      "status": "PASS",
+      "evidence": "重试硬上限: 2 passed, 5 deselected, 1 warning in 6.86s"
+    },
+    {
+      "id": "A9",
+      "name": "引用回链字段完整（12 键）",
+      "status": "PASS",
+      "evidence": "{\"keys\": 12, \"same\": true, \"page_int\": true, \"bbox4\": true}"
+    },
+    {
+      "id": "A10",
+      "name": "8 节点图 + 埋点",
+      "status": "PASS",
+      "evidence": "8 节点 + trace 8 键: 2 passed, 5 deselected, 1 warning in 6.88s"
+    },
+    {
+      "id": "A11",
+      "name": "越界零 LLM 调用",
+      "status": "PASS",
+      "evidence": "越界 0 次 LLM: 1 passed, 6 deselected in 0.74s"
+    },
+    {
+      "id": "A12",
+      "name": "图内 P95 ≤ 6s",
+      "status": "PASS",
+      "evidence": "图内 P95=83.2ms≤6000ms"
+    },
+    {
+      "id": "A13",
+      "name": "无 Docker / 无 API 全绿",
+      "status": "PASS",
+      "evidence": "unit+integration: 282 passed, 1 warning in 20.26s"
+    },
+    {
+      "id": "A14",
+      "name": "预算护栏生效",
+      "status": "PASS",
+      "evidence": "预算护栏: 5 passed in 0.05s"
+    }
+  ],
+  "pass": 12,
+  "fail": 0,
+  "skip": 2
+}
